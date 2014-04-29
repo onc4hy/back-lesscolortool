@@ -1,0 +1,133 @@
+ul,li {
+	margin:0;
+	padding:0;
+}
+
+body {
+	margin:0 auto;
+	padding:2px;
+	background:#fafaf7;
+}
+.page {
+	position:relative;
+	width:970px;
+	margin:0 auto;
+}
+.header {
+	position:relative;
+	height:90px;
+	overflow:hidden;
+	text-align:center;
+	padding:0 400px 4px 0;
+	margin-bottom:4px;
+	border-bottom:1px solid #eee;
+}
+.header .home{
+	position:absolute;
+	left:0;
+	top:5px;
+	width:120px;
+	text-align:left;
+	font-size:12px;
+	text-decoration:none;
+}
+.header p{
+	position:absolute;
+	right:0;
+	top:0;
+	width:400px;
+	text-align:right;
+}
+.header p b{
+	display:block;
+	margin-top:8px;
+}
+.article {
+	padding-left:240px;
+	position:relative;
+}
+.article .aside{
+	position:absolute;
+	width:240px;
+	left:0;
+	top:0;
+}
+.article .aside h3{
+	border-bottom:1px solid #eee;
+	margin:0;
+	padding-bottom:2px;
+	margin-bottom:2px;
+}
+.article .aside .color-ref{
+	clear:both;
+	margin-right:2px;
+	text-align:left;
+}
+.article .aside .color-ref span{
+	margin:2px;
+	padding:2px;
+	width:10px;
+	height:10px;
+	display:block;
+	float:left;
+	border:1px solid #333;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+.article .section{
+	clear:both;
+}
+
+.color-control {
+	position:relative;
+	float:left;
+	width:240px;
+	height:300px;
+}
+#color-btn {
+	position:absolute;
+	right:40px;
+	top:10px;
+	border:#ff9900;
+	background:#ff9900;
+	color:#111;
+	outline:none;
+	padding:6px 20px;
+}
+#color-value {
+	margin-top:40px;
+}
+#color-picker {
+	clear:both;
+}
+
+.figure {
+	float: left;
+	margin: 0 10px 10px 0;
+	width: 160px;
+}
+.figure li{
+	float: left;
+}
+.figure .figcaption {
+	display:inline-block;
+	text-align:center;
+	width: 160px;
+}
+.figure .figlegend {
+	border-radius:4px;
+	background:#6fb0f1;
+	display:inline-block;
+	text-align:center;
+	height:60px;
+	width: 160px;
+}
+.figure .figlegend span{
+	margin:0 4px;
+}
+h1 {font-size:16px;font-weight:bold;}
+h2 {font-size:14px;font-weight:bold;}
+h3 {font-size:14px;font-weight:bold;}
+h4 {font-size:12px;font-weight:bold;margin:0;}
+h5 {font-size:12px;font-weight:normal;}
+h6 {font-size:11px;font-weight:normal;}

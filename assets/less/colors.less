@@ -1,0 +1,202 @@
+//@base-color: #2865CC;
+@base-color: #00ff00;
+
+// Shades
+@difference: 10%; // Difference (in perecent) between each shade
+@shade-1: lighten(@base-color, (@difference * 2));
+@shade-2: lighten(@base-color, @difference);
+@shade-3: @base-color;
+@shade-4: darken(@base-color, @difference);
+@shade-5: darken(@base-color, (@difference * 2));
+
+// Analgous
+@distance-1: 10; // Degrees between each analgous color
+@analgous-1: spin(@base-color, (@distance-1 * 2));
+@analgous-2: spin(@base-color, @distance-1);
+@analgous-3: @base-color;
+@analgous-4: spin(@base-color, (@distance-1 * -1));
+@analgous-5: spin(@base-color, (@distance-1 * -2));
+
+// Complementary
+@complementary-1: @base-color;
+@complementary-2: spin(@base-color, 180);
+
+// Split Complementary
+@distance-2: 80; // Degrees between the two complementary colors
+@splitComp-1: spin(@base-color, ((360 - @distance-2) / 2));
+@splitComp-2: @base-color;
+@splitComp-3: spin(@base-color, (((360 - @distance-2) / 2) * -1));
+
+// Clash
+@angle: 45; // Angle formed at base of isosceles triangle
+@clash-1: spin(@base-color, (@angle * -2));
+@clash-2: @base-color;
+@clash-3: spin(@base-color, (@angle * 2));
+
+// Triadic
+@distance-3: 120; // Degrees between the two new colors
+@triad-1: @base-color;
+@triad-2: spin(@base-color, (180 - (@distance-3 * 0.5)));
+@triad-3: spin(@base-color, (180 + (@distance-3 * 0.5)));
+
+// Tetradic
+@distance-4: 90; // Degrees between two closest colors
+@tetrad-1: @base-color;
+@tetrad-2: spin(@base-color, @distance-4);
+@tetrad-3: spin(@base-color, 180);
+@tetrad-4: spin(@base-color, (180 + @distance-4));
+
+// Five tone
+@distance-5: 30; // Degrees between the 4 analgous colors
+@5tone-1: @base-color;
+@5tone-2: spin(@base-color, (180 - (@distance-5 * 1.5)));
+@5tone-3: spin(@base-color, (180 - (@distance-5 * 0.5)));
+@5tone-4: spin(@base-color, (180 + (@distance-5 * 0.5)));
+@5tone-5: spin(@base-color, (180 + (@distance-5 * 1.5)));
+
+// Six tone
+@distance-6: 20; // Distance between the colors of each analgous pair
+// Pair 1
+@6tone-1: @base-color;
+@6tone-2: spin(@base-color, @distance-6);
+// Pair 2
+@6tone-3: spin(@base-color, (120 - (@distance-6 * 0.5)));
+@6tone-4: spin(@base-color, (120 + (@distance-6 * 0.5)));
+// Pair 3
+@6tone-5: spin(@base-color, (-120 + (@distance-6 * 0.5)));
+@6tone-6: spin(@base-color, (-120 - (@distance-6 * 0.5)));
+
+.scheme.shades .one {
+  background-color: @base-color;
+}
+
+.scheme {
+  border-radius: 6px;
+  height: 100px;
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+  width: 100%; }
+  .scheme .color {
+    float: left;
+    height: 100px; }
+  .scheme.two .color {
+    width: 50%; }
+  .scheme.three .color {
+    width: 33.333%; }
+  .scheme.four .color {
+    width: 25%; }
+  .scheme.five .color {
+    width: 20%; }
+  .scheme.six .color {
+    width: 16.667%; 
+}
+
+.scheme.shades .one {
+  background-color: @shade-1;
+}
+.scheme.shades .two {
+  background-color: @shade-2;
+}
+.scheme.shades .three {
+  background-color: @shade-3;
+}
+.scheme.shades .four {
+  background-color: @shade-4;
+}
+.scheme.shades .five {
+  background-color: @shade-5;
+}
+.scheme.analgous .one {
+  background-color: @analgous-1;
+}
+.scheme.analgous .two {
+  background-color: @analgous-2;
+}
+.scheme.analgous .three {
+  background-color: @analgous-3;
+}
+.scheme.analgous .four {
+  background-color: @analgous-4;
+}
+.scheme.analgous .five {
+  background-color: @analgous-5;
+}
+.scheme.complementary .one {
+  background-color: @complementary-1;
+}
+.scheme.complementary .two {
+  background-color: @complementary-2;
+}
+.scheme.split-comp .one {
+  background-color: @splitComp-1;
+}
+.scheme.split-comp .two {
+  background-color: @splitComp-2;
+}
+.scheme.split-comp .three {
+  background-color: @splitComp-3;
+}
+.scheme.clash .one {
+  background-color: @clash-1;
+}
+.scheme.clash .two {
+  background-color: @clash-2;
+}
+.scheme.clash .three {
+  background-color: @clash-3;
+}
+.scheme.triadic .one {
+  background-color: @triad-1;
+}
+.scheme.triadic .two {
+  background-color: @triad-2;
+}
+.scheme.triadic .three {
+  background-color: @triad-3;
+}
+.scheme.tetradic .one {
+  background-color: @tetrad-1;
+}
+.scheme.tetradic .two {
+  background-color: @tetrad-2;
+}
+.scheme.tetradic .three {
+  background-color: @tetrad-3;
+}
+.scheme.tetradic .four {
+  background-color: @tetrad-4;
+}
+.scheme.five-tone .one {
+  background-color: @5tone-1;
+}
+.scheme.five-tone .two {
+  background-color: @5tone-2;
+}
+.scheme.five-tone .three {
+  background-color: @5tone-3;
+}
+.scheme.five-tone .four {
+  background-color: @5tone-4;
+}
+.scheme.five-tone .five {
+  background-color: @5tone-5;
+}
+.scheme.six-tone .one {
+  background-color: @6tone-1;
+}
+.scheme.six-tone .two {
+  background-color: @6tone-2;
+}
+.scheme.six-tone .three {
+  background-color: @6tone-3;
+}
+.scheme.six-tone .four {
+  background-color: @6tone-4;
+}
+.scheme.six-tone .five {
+  background-color: @6tone-5;
+}
+.scheme.six-tone .six {
+  background-color: @6tone-6;
+}
