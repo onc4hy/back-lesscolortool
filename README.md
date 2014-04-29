@@ -24,7 +24,10 @@ lesscolortool
 
 ### Thanks[延展感谢]：
 
-[kuler] <https://kuler.adobe.com/>
-[LESS] <http://lesscss.org>
-[JKING90Demo] <http://jimmyking.me/colors.less/>
+[kuler](https://kuler.adobe.com/) <https://kuler.adobe.com/>
+
+[LESS](http://lesscss.org) <http://lesscss.org>
+
+[JKING90Demo](http://jimmyking.me/colors.less/) <http://jimmyking.me/colors.less/>
+
 [MyDemo] <http://>
