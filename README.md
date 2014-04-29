@@ -10,10 +10,11 @@ lesscolortool
 部分参考了 jking90做的一个演示，感谢他。
 
 <https://github.com/jking90/colors.less>
+
 <http://jimmyking.me/colors.less/>
 
 花了一天时间做的，能有多粗糙，可想而知。
-有需要的朋友就自行扩展和配色吧，
+* 有需要的朋友就自行扩展和配色吧，
 
 毕竟只是提供一个可能性。
 
@@ -23,6 +24,6 @@ lesscolortool
 
 ### Thanks[延展感谢]：
 
-  [kuler]: https://kuler.adobe.com/
-  [LESS]: http://lesscss.org/
-  [Demo]: http://jimmyking.me/colors.less/#demo
+[kuler]: https://kuler.adobe.com/
+[LESS]: http://lesscss.org/
+[Demo]: http://jimmyking.me/colors.less/#demo
