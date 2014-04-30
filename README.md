@@ -1,6 +1,8 @@
 lesscolortool
 =============
 
+### Intro[介绍]
+
 * Use Less css color function generator your owner color scheme,
 * 使用Less css工具的颜色函数生成你自己喜欢的颜色方案
 
@@ -18,17 +20,17 @@ lesscolortool
 
 毕竟只是提供一个可能性。
 
-### 一点特色
+### Feature[一点特色]
 
-* 设计布局时考虑最大最简的可视面积与颜色参考
-* 即时显示颜色方案中配色常用的css 值
-* 兼容了IE8等浏览器，6，7没测试
+> * 设计布局时考虑最大最简的可视面积与颜色参考
+> * 即时显示颜色方案中配色常用的css 值
+> * 兼容了IE8等浏览器，6，7没测试
 
 ### Usage[使用方法]
 
 > 因为Less使用了Ajax来访问文件，
 > 所以如果要直接在本地访问，除了Firefox外，其他浏览器都有Ajax访问本地限制而不能使用。
-> 可以直接放到Web服务器下来访问使用即可。
+> 可以直接放到Web服务器如Apache下来访问使用即可。
 
 ### Screen[功能快速截图]
 
