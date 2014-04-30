@@ -66,6 +66,7 @@ body {
 }
 .article .aside .color-ref{
 	clear:both;
+	width:220px;
 	margin-right:2px;
 	text-align:left;
 }
@@ -86,7 +87,7 @@ body {
 
 #color-btn {
 	position:absolute;
-	right:14px;
+	right:17px;
 	top:10px;
 	border:#ff9900;
 	background:#ff9900;

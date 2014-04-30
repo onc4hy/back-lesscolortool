@@ -37,14 +37,14 @@
         </div>
         <div class="article">
               <div class="aside">
-                <h3>Color Input 基础色 输入</h2>
+                <h3>Color Input 基本色 输入</h2>
                 <div class="color-control">
                     <button id="color-btn">输出色彩方案</button>
                     <br/>
                     <input id="color-value" class="color1" type="text" value="#fff">
                     <div id="color-picker"></div>
                 </div>
-                <h3>Color Ref 基础色 参考</h2>
+                <h3>Color Ref 基本色 参考</h2>
                 <div class="color-ref">
                     <span color="#000" title="black:#[000]" style="background:#000;">black[&nbsp;#000&nbsp;]</span>
                     <span color="#fff" title="white:#[fff]" style="background:#fff;">white[&nbsp;#fff&nbsp;]</span>
@@ -57,163 +57,759 @@
                     <span color="#ff0" title="yellow:#[ff0]" style="background:#ff0;">yellow[&nbsp;#ff0&nbsp;]</span>
                 </div>
                 <div class="color-ref">
-                    <span color="#f0f8ff" title="aliceblue:#[f0f8ff]" style="background:#f0f8ff;">aliceblue[&nbsp;#f0f8ff&nbsp;]</span>
-                    <span color="#faebd7" title="antiquewhite:#[faebd7]" style="background:#faebd7;">antiquewhite[&nbsp;#faebd7&nbsp;]</span>
-                    <span color="#0ff" title="aqua:#[0ff]" style="background:#0ff;">aqua[&nbsp;#0ff&nbsp;]</span>
-                    <span color="#7fffd4" title="aquamarine:#[7fffd4]" style="background:#7fffd4;">aquamarine[&nbsp;#7fffd4&nbsp;]</span>
-                    <span color="#f0ffff" title="azure:#[f0ffff]" style="background:#f0ffff;">azure[&nbsp;#f0ffff&nbsp;]</span>
-                    <span color="#f5f5dc" title="beige:#[f5f5dc]" style="background:#f5f5dc;">beige[&nbsp;#f5f5dc&nbsp;]</span>
-                    <span color="#ffe4c4" title="bisque:#[ffe4c4]" style="background:#ffe4c4;">bisque[&nbsp;#ffe4c4&nbsp;]</span>
-                    <span color="#ffebcd" title="blanchedalmond:#[ffebcd]" style="background:#ffebcd;">blanchedalmond[&nbsp;#ffebcd&nbsp;]</span>
-                    <span color="#8a2be2" title="blueviolet:#[8a2be2]" style="background:#8a2be2;">blueviolet[&nbsp;#8a2be2&nbsp;]</span>
-                    <span color="#a52a2a" title="brown:#[a52a2a]" style="background:#a52a2a;">brown[&nbsp;#a52a2a&nbsp;]</span>
-                    <span color="#deb887" title="burlywood:#[deb887]" style="background:#deb887;">burlywood[&nbsp;#deb887&nbsp;]</span>
-                    <span color="#ea7e5d" title="burntsienna:#[ea7e5d]" style="background:#ea7e5d;">burntsienna[&nbsp;#ea7e5d&nbsp;]</span>
-                    <span color="#5f9ea0" title="cadetblue:#[5f9ea0]" style="background:#5f9ea0;">cadetblue[&nbsp;#5f9ea0&nbsp;]</span>
-                    <span color="#7fff00" title="chartreuse:#[7fff00]" style="background:#7fff00;">chartreuse[&nbsp;#7fff00&nbsp;]</span>
-                    <span color="#d2691e" title="chocolate:#[d2691e]" style="background:#d2691e;">chocolate[&nbsp;#d2691e&nbsp;]</span>
-                    <span color="#ff7f50" title="coral:#[ff7f50]" style="background:#ff7f50;">coral[&nbsp;#ff7f50&nbsp;]</span>
-                    <span color="#6495ed" title="cornflowerblue:#[6495ed]" style="background:#6495ed;">cornflowerblue[&nbsp;#6495ed&nbsp;]</span>
-                    <span color="#fff8dc" title="cornsilk:#[fff8dc]" style="background:#fff8dc;">cornsilk[&nbsp;#fff8dc&nbsp;]</span>
-                    <span color="#dc143c" title="crimson:#[dc143c]" style="background:#dc143c;">crimson[&nbsp;#dc143c&nbsp;]</span>
-                    <span color="#00008b" title="darkblue:#[00008b]" style="background:#00008b;">darkblue[&nbsp;#00008b&nbsp;]</span>
-                    <span color="#008b8b" title="darkcyan:#[008b8b]" style="background:#008b8b;">darkcyan[&nbsp;#008b8b&nbsp;]</span>
-                    <span color="#b8860b" title="darkgoldenrod:#[b8860b]" style="background:#b8860b;">darkgoldenrod[&nbsp;#b8860b&nbsp;]</span>
-                    <span color="#a9a9a9" title="darkgray:#[a9a9a9]" style="background:#a9a9a9;">darkgray[&nbsp;#a9a9a9&nbsp;]</span>
-                    <span color="#006400" title="darkgreen:#[006400]" style="background:#006400;">darkgreen[&nbsp;#006400&nbsp;]</span>
-                    <span color="#a9a9a9" title="darkgrey:#[a9a9a9]" style="background:#a9a9a9;">darkgrey[&nbsp;#a9a9a9&nbsp;]</span>
-                    <span color="#bdb76b" title="darkkhaki:#[bdb76b]" style="background:#bdb76b;">darkkhaki[&nbsp;#bdb76b&nbsp;]</span>
-                    <span color="#8b008b" title="darkmagenta:#[8b008b]" style="background:#8b008b;">darkmagenta[&nbsp;#8b008b&nbsp;]</span>
-                    <span color="#556b2f" title="darkolivegreen:#[556b2f]" style="background:#556b2f;">darkolivegreen[&nbsp;#556b2f&nbsp;]</span>
-                    <span color="#ff8c00" title="darkorange:#[ff8c00]" style="background:#ff8c00;">darkorange[&nbsp;#ff8c00&nbsp;]</span>
-                    <span color="#9932cc" title="darkorchid:#[9932cc]" style="background:#9932cc;">darkorchid[&nbsp;#9932cc&nbsp;]</span>
-                    <span color="#8b0000" title="darkred:#[8b0000]" style="background:#8b0000;">darkred[&nbsp;#8b0000&nbsp;]</span>
-                    <span color="#e9967a" title="darksalmon:#[e9967a]" style="background:#e9967a;">darksalmon[&nbsp;#e9967a&nbsp;]</span>
-                    <span color="#8fbc8f" title="darkseagreen:#[8fbc8f]" style="background:#8fbc8f;">darkseagreen[&nbsp;#8fbc8f&nbsp;]</span>
-                    <span color="#483d8b" title="darkslateblue:#[483d8b]" style="background:#483d8b;">darkslateblue[&nbsp;#483d8b&nbsp;]</span>
-                    <span color="#2f4f4f" title="darkslategray:#[2f4f4f]" style="background:#2f4f4f;">darkslategray[&nbsp;#2f4f4f&nbsp;]</span>
-                    <span color="#2f4f4f" title="darkslategrey:#[2f4f4f]" style="background:#2f4f4f;">darkslategrey[&nbsp;#2f4f4f&nbsp;]</span>
-                    <span color="#00ced1" title="darkturquoise:#[00ced1]" style="background:#00ced1;">darkturquoise[&nbsp;#00ced1&nbsp;]</span>
-                    <span color="#9400d3" title="darkviolet:#[9400d3]" style="background:#9400d3;">darkviolet[&nbsp;#9400d3&nbsp;]</span>
-                    <span color="#ff1493" title="deeppink:#[ff1493]" style="background:#ff1493;">deeppink[&nbsp;#ff1493&nbsp;]</span>
-                    <span color="#00bfff" title="deepskyblue:#[00bfff]" style="background:#00bfff;">deepskyblue[&nbsp;#00bfff&nbsp;]</span>
-                    <span color="#696969" title="dimgray:#[696969]" style="background:#696969;">dimgray[&nbsp;#696969&nbsp;]</span>
-                    <span color="#696969" title="dimgrey:#[696969]" style="background:#696969;">dimgrey[&nbsp;#696969&nbsp;]</span>
-                    <span color="#1e90ff" title="dodgerblue:#[1e90ff]" style="background:#1e90ff;">dodgerblue[&nbsp;#1e90ff&nbsp;]</span>
-                    <span color="#b22222" title="firebrick:#[b22222]" style="background:#b22222;">firebrick[&nbsp;#b22222&nbsp;]</span>
-                    <span color="#fffaf0" title="floralwhite:#[fffaf0]" style="background:#fffaf0;">floralwhite[&nbsp;#fffaf0&nbsp;]</span>
-                    <span color="#228b22" title="forestgreen:#[228b22]" style="background:#228b22;">forestgreen[&nbsp;#228b22&nbsp;]</span>
-                    <span color="#f0f" title="fuchsia:#[f0f]" style="background:#f0f;">fuchsia[&nbsp;#f0f&nbsp;]</span>
-                    <span color="#dcdcdc" title="gainsboro:#[dcdcdc]" style="background:#dcdcdc;">gainsboro[&nbsp;#dcdcdc&nbsp;]</span>
-                    <span color="#f8f8ff" title="ghostwhite:#[f8f8ff]" style="background:#f8f8ff;">ghostwhite[&nbsp;#f8f8ff&nbsp;]</span>
-                    <span color="#ffd700" title="gold:#[ffd700]" style="background:#ffd700;">gold[&nbsp;#ffd700&nbsp;]</span>
-                    <span color="#daa520" title="goldenrod:#[daa520]" style="background:#daa520;">goldenrod[&nbsp;#daa520&nbsp;]</span>
-                    <span color="#adff2f" title="greenyellow:#[adff2f]" style="background:#adff2f;">greenyellow[&nbsp;#adff2f&nbsp;]</span>
-                    <span color="#808080" title="grey:#[808080]" style="background:#808080;">grey[&nbsp;#808080&nbsp;]</span>
-                    <span color="#f0fff0" title="honeydew:#[f0fff0]" style="background:#f0fff0;">honeydew[&nbsp;#f0fff0&nbsp;]</span>
-                    <span color="#ff69b4" title="hotpink:#[ff69b4]" style="background:#ff69b4;">hotpink[&nbsp;#ff69b4&nbsp;]</span>
-                    <span color="#cd5c5c" title="indianred:#[cd5c5c]" style="background:#cd5c5c;">indianred[&nbsp;#cd5c5c&nbsp;]</span>
-                    <span color="#4b0082" title="indigo:#[4b0082]" style="background:#4b0082;">indigo[&nbsp;#4b0082&nbsp;]</span>
-                    <span color="#fffff0" title="ivory:#[fffff0]" style="background:#fffff0;">ivory[&nbsp;#fffff0&nbsp;]</span>
-                    <span color="#f0e68c" title="khaki:#[f0e68c]" style="background:#f0e68c;">khaki[&nbsp;#f0e68c&nbsp;]</span>
-                    <span color="#e6e6fa" title="lavender:#[e6e6fa]" style="background:#e6e6fa;">lavender[&nbsp;#e6e6fa&nbsp;]</span>
-                    <span color="#fff0f5" title="lavenderblush:#[fff0f5]" style="background:#fff0f5;">lavenderblush[&nbsp;#fff0f5&nbsp;]</span>
-                    <span color="#7cfc00" title="lawngreen:#[7cfc00]" style="background:#7cfc00;">lawngreen[&nbsp;#7cfc00&nbsp;]</span>
-                    <span color="#fffacd" title="lemonchiffon:#[fffacd]" style="background:#fffacd;">lemonchiffon[&nbsp;#fffacd&nbsp;]</span>
-                    <span color="#add8e6" title="lightblue:#[add8e6]" style="background:#add8e6;">lightblue[&nbsp;#add8e6&nbsp;]</span>
-                    <span color="#f08080" title="lightcoral:#[f08080]" style="background:#f08080;">lightcoral[&nbsp;#f08080&nbsp;]</span>
-                    <span color="#e0ffff" title="lightcyan:#[e0ffff]" style="background:#e0ffff;">lightcyan[&nbsp;#e0ffff&nbsp;]</span>
-                    <span color="#fafad2" title="lightgoldenrodyellow:#[fafad2]" style="background:#fafad2;">lightgoldenrodyellow[&nbsp;#fafad2&nbsp;]</span>
-                    <span color="#d3d3d3" title="lightgray:#[d3d3d3]" style="background:#d3d3d3;">lightgray[&nbsp;#d3d3d3&nbsp;]</span>
-                    <span color="#90ee90" title="lightgreen:#[90ee90]" style="background:#90ee90;">lightgreen[&nbsp;#90ee90&nbsp;]</span>
-                    <span color="#d3d3d3" title="lightgrey:#[d3d3d3]" style="background:#d3d3d3;">lightgrey[&nbsp;#d3d3d3&nbsp;]</span>
-                    <span color="#ffb6c1" title="lightpink:#[ffb6c1]" style="background:#ffb6c1;">lightpink[&nbsp;#ffb6c1&nbsp;]</span>
-                    <span color="#ffa07a" title="lightsalmon:#[ffa07a]" style="background:#ffa07a;">lightsalmon[&nbsp;#ffa07a&nbsp;]</span>
-                    <span color="#20b2aa" title="lightseagreen:#[20b2aa]" style="background:#20b2aa;">lightseagreen[&nbsp;#20b2aa&nbsp;]</span>
-                    <span color="#87cefa" title="lightskyblue:#[87cefa]" style="background:#87cefa;">lightskyblue[&nbsp;#87cefa&nbsp;]</span>
-                    <span color="#789" title="lightslategray:#[789]" style="background:#789;">lightslategray[&nbsp;#789&nbsp;]</span>
-                    <span color="#789" title="lightslategrey:#[789]" style="background:#789;">lightslategrey[&nbsp;#789&nbsp;]</span>
-                    <span color="#b0c4de" title="lightsteelblue:#[b0c4de]" style="background:#b0c4de;">lightsteelblue[&nbsp;#b0c4de&nbsp;]</span>
-                    <span color="#ffffe0" title="lightyellow:#[ffffe0]" style="background:#ffffe0;">lightyellow[&nbsp;#ffffe0&nbsp;]</span>
-                    <span color="#0f0" title="lime:#[0f0]" style="background:#0f0;">lime[&nbsp;#0f0&nbsp;]</span>
-                    <span color="#32cd32" title="limegreen:#[32cd32]" style="background:#32cd32;">limegreen[&nbsp;#32cd32&nbsp;]</span>
-                    <span color="#faf0e6" title="linen:#[faf0e6]" style="background:#faf0e6;">linen[&nbsp;#faf0e6&nbsp;]</span>
-                    <span color="#800000" title="maroon:#[800000]" style="background:#800000;">maroon[&nbsp;#800000&nbsp;]</span>
-                    <span color="#66cdaa" title="mediumaquamarine:#[66cdaa]" style="background:#66cdaa;">mediumaquamarine[&nbsp;#66cdaa&nbsp;]</span>
-                    <span color="#0000cd" title="mediumblue:#[0000cd]" style="background:#0000cd;">mediumblue[&nbsp;#0000cd&nbsp;]</span>
-                    <span color="#ba55d3" title="mediumorchid:#[ba55d3]" style="background:#ba55d3;">mediumorchid[&nbsp;#ba55d3&nbsp;]</span>
-                    <span color="#9370db" title="mediumpurple:#[9370db]" style="background:#9370db;">mediumpurple[&nbsp;#9370db&nbsp;]</span>
-                    <span color="#3cb371" title="mediumseagreen:#[3cb371]" style="background:#3cb371;">mediumseagreen[&nbsp;#3cb371&nbsp;]</span>
-                    <span color="#7b68ee" title="mediumslateblue:#[7b68ee]" style="background:#7b68ee;">mediumslateblue[&nbsp;#7b68ee&nbsp;]</span>
-                    <span color="#00fa9a" title="mediumspringgreen:#[00fa9a]" style="background:#00fa9a;">mediumspringgreen[&nbsp;#00fa9a&nbsp;]</span>
-                    <span color="#48d1cc" title="mediumturquoise:#[48d1cc]" style="background:#48d1cc;">mediumturquoise[&nbsp;#48d1cc&nbsp;]</span>
-                    <span color="#c71585" title="mediumvioletred:#[c71585]" style="background:#c71585;">mediumvioletred[&nbsp;#c71585&nbsp;]</span>
-                    <span color="#191970" title="midnightblue:#[191970]" style="background:#191970;">midnightblue[&nbsp;#191970&nbsp;]</span>
-                    <span color="#f5fffa" title="mintcream:#[f5fffa]" style="background:#f5fffa;">mintcream[&nbsp;#f5fffa&nbsp;]</span>
-                    <span color="#ffe4e1" title="mistyrose:#[ffe4e1]" style="background:#ffe4e1;">mistyrose[&nbsp;#ffe4e1&nbsp;]</span>
-                    <span color="#ffe4b5" title="moccasin:#[ffe4b5]" style="background:#ffe4b5;">moccasin[&nbsp;#ffe4b5&nbsp;]</span>
-                    <span color="#ffdead" title="navajowhite:#[ffdead]" style="background:#ffdead;">navajowhite[&nbsp;#ffdead&nbsp;]</span>
-                    <span color="#000080" title="navy:#[000080]" style="background:#000080;">navy[&nbsp;#000080&nbsp;]</span>
-                    <span color="#fdf5e6" title="oldlace:#[fdf5e6]" style="background:#fdf5e6;">oldlace[&nbsp;#fdf5e6&nbsp;]</span>
-                    <span color="#808000" title="olive:#[808000]" style="background:#808000;">olive[&nbsp;#808000&nbsp;]</span>
-                    <span color="#6b8e23" title="olivedrab:#[6b8e23]" style="background:#6b8e23;">olivedrab[&nbsp;#6b8e23&nbsp;]</span>
-                    <span color="#ffa500" title="orange:#[ffa500]" style="background:#ffa500;">orange[&nbsp;#ffa500&nbsp;]</span>
-                    <span color="#ff4500" title="orangered:#[ff4500]" style="background:#ff4500;">orangered[&nbsp;#ff4500&nbsp;]</span>
-                    <span color="#da70d6" title="orchid:#[da70d6]" style="background:#da70d6;">orchid[&nbsp;#da70d6&nbsp;]</span>
-                    <span color="#eee8aa" title="palegoldenrod:#[eee8aa]" style="background:#eee8aa;">palegoldenrod[&nbsp;#eee8aa&nbsp;]</span>
-                    <span color="#98fb98" title="palegreen:#[98fb98]" style="background:#98fb98;">palegreen[&nbsp;#98fb98&nbsp;]</span>
-                    <span color="#afeeee" title="paleturquoise:#[afeeee]" style="background:#afeeee;">paleturquoise[&nbsp;#afeeee&nbsp;]</span>
-                    <span color="#db7093" title="palevioletred:#[db7093]" style="background:#db7093;">palevioletred[&nbsp;#db7093&nbsp;]</span>
-                    <span color="#ffefd5" title="papayawhip:#[ffefd5]" style="background:#ffefd5;">papayawhip[&nbsp;#ffefd5&nbsp;]</span>
-                    <span color="#ffdab9" title="peachpuff:#[ffdab9]" style="background:#ffdab9;">peachpuff[&nbsp;#ffdab9&nbsp;]</span>
-                    <span color="#cd853f" title="peru:#[cd853f]" style="background:#cd853f;">peru[&nbsp;#cd853f&nbsp;]</span>
-                    <span color="#ffc0cb" title="pink:#[ffc0cb]" style="background:#ffc0cb;">pink[&nbsp;#ffc0cb&nbsp;]</span>
-                    <span color="#dda0dd" title="plum:#[dda0dd]" style="background:#dda0dd;">plum[&nbsp;#dda0dd&nbsp;]</span>
-                    <span color="#b0e0e6" title="powderblue:#[b0e0e6]" style="background:#b0e0e6;">powderblue[&nbsp;#b0e0e6&nbsp;]</span>
-                    <span color="#800080" title="purple:#[800080]" style="background:#800080;">purple[&nbsp;#800080&nbsp;]</span>
-                    <span color="#bc8f8f" title="rosybrown:#[bc8f8f]" style="background:#bc8f8f;">rosybrown[&nbsp;#bc8f8f&nbsp;]</span>
-                    <span color="#4169e1" title="royalblue:#[4169e1]" style="background:#4169e1;">royalblue[&nbsp;#4169e1&nbsp;]</span>
-                    <span color="#8b4513" title="saddlebrown:#[8b4513]" style="background:#8b4513;">saddlebrown[&nbsp;#8b4513&nbsp;]</span>
-                    <span color="#fa8072" title="salmon:#[fa8072]" style="background:#fa8072;">salmon[&nbsp;#fa8072&nbsp;]</span>
-                    <span color="#f4a460" title="sandybrown:#[f4a460]" style="background:#f4a460;">sandybrown[&nbsp;#f4a460&nbsp;]</span>
-                    <span color="#2e8b57" title="seagreen:#[2e8b57]" style="background:#2e8b57;">seagreen[&nbsp;#2e8b57&nbsp;]</span>
-                    <span color="#fff5ee" title="seashell:#[fff5ee]" style="background:#fff5ee;">seashell[&nbsp;#fff5ee&nbsp;]</span>
-                    <span color="#a0522d" title="sienna:#[a0522d]" style="background:#a0522d;">sienna[&nbsp;#a0522d&nbsp;]</span>
-                    <span color="#c0c0c0" title="silver:#[c0c0c0]" style="background:#c0c0c0;">silver[&nbsp;#c0c0c0&nbsp;]</span>
-                    <span color="#87ceeb" title="skyblue:#[87ceeb]" style="background:#87ceeb;">skyblue[&nbsp;#87ceeb&nbsp;]</span>
-                    <span color="#6a5acd" title="slateblue:#[6a5acd]" style="background:#6a5acd;">slateblue[&nbsp;#6a5acd&nbsp;]</span>
-                    <span color="#708090" title="slategray:#[708090]" style="background:#708090;">slategray[&nbsp;#708090&nbsp;]</span>
-                    <span color="#708090" title="slategrey:#[708090]" style="background:#708090;">slategrey[&nbsp;#708090&nbsp;]</span>
-                    <span color="#fffafa" title="snow:#[fffafa]" style="background:#fffafa;">snow[&nbsp;#fffafa&nbsp;]</span>
-                    <span color="#00ff7f" title="springgreen:#[00ff7f]" style="background:#00ff7f;">springgreen[&nbsp;#00ff7f&nbsp;]</span>
-                    <span color="#4682b4" title="steelblue:#[4682b4]" style="background:#4682b4;">steelblue[&nbsp;#4682b4&nbsp;]</span>
-                    <span color="#d2b48c" title="tan:#[d2b48c]" style="background:#d2b48c;">tan[&nbsp;#d2b48c&nbsp;]</span>
-                    <span color="#008080" title="teal:#[008080]" style="background:#008080;">teal[&nbsp;#008080&nbsp;]</span>
-                    <span color="#d8bfd8" title="thistle:#[d8bfd8]" style="background:#d8bfd8;">thistle[&nbsp;#d8bfd8&nbsp;]</span>
-                    <span color="#ff6347" title="tomato:#[ff6347]" style="background:#ff6347;">tomato[&nbsp;#ff6347&nbsp;]</span>
-                    <span color="#40e0d0" title="turquoise:#[40e0d0]" style="background:#40e0d0;">turquoise[&nbsp;#40e0d0&nbsp;]</span>
-                    <span color="#ee82ee" title="violet:#[ee82ee]" style="background:#ee82ee;">violet[&nbsp;#ee82ee&nbsp;]</span>
-                    <span color="#f5deb3" title="wheat:#[f5deb3]" style="background:#f5deb3;">wheat[&nbsp;#f5deb3&nbsp;]</span>
-                    <span color="#f5f5f5" title="whitesmoke:#[f5f5f5]" style="background:#f5f5f5;">whitesmoke[&nbsp;#f5f5f5&nbsp;]</span>
-                    <span color="#9acd32" title="yellowgreen:#[9acd32]" style="background:#9acd32;">yellowgreen[&nbsp;#9acd32&nbsp;]</span>
+					<span color="#5d8aa8" title="Air Force blue:#[5d8aa8]" style="background:#5d8aa8;">Air Force blue[&nbsp;#5d8aa8&nbsp;]</span>
+					<span color="#f0f8ff" title="Alice blue:#[f0f8ff]" style="background:#f0f8ff;">Alice blue[&nbsp;#f0f8ff&nbsp;]</span>
+					<span color="#e32636" title="Alizarin crimson:#[e32636]" style="background:#e32636;">Alizarin crimson[&nbsp;#e32636&nbsp;]</span>
+					<span color="#efdecd" title="Almond:#[efdecd]" style="background:#efdecd;">Almond[&nbsp;#efdecd&nbsp;]</span>
+					<span color="#e52b50" title="Amaranth:#[e52b50]" style="background:#e52b50;">Amaranth[&nbsp;#e52b50&nbsp;]</span>
+					<span color="#ffbf00" title="Amber:#[ffbf00]" style="background:#ffbf00;">Amber[&nbsp;#ffbf00&nbsp;]</span>
+					<span color="#ff033e" title="American rose:#[ff033e]" style="background:#ff033e;">American rose[&nbsp;#ff033e&nbsp;]</span>
+					<span color="#9966cc" title="Amethyst:#[9966cc]" style="background:#9966cc;">Amethyst[&nbsp;#9966cc&nbsp;]</span>
+					<span color="#a4c639" title="Android Green:#[a4c639]" style="background:#a4c639;">Android Green[&nbsp;#a4c639&nbsp;]</span>
+					<span color="#f2f3f4" title="Anti-flash white:#[f2f3f4]" style="background:#f2f3f4;">Anti-flash white[&nbsp;#f2f3f4&nbsp;]</span>
+					<span color="#cd9575" title="Antique brass:#[cd9575]" style="background:#cd9575;">Antique brass[&nbsp;#cd9575&nbsp;]</span>
+					<span color="#915c83" title="Antique fuchsia:#[915c83]" style="background:#915c83;">Antique fuchsia[&nbsp;#915c83&nbsp;]</span>
+					<span color="#faebd7" title="Antique white:#[faebd7]" style="background:#faebd7;">Antique white[&nbsp;#faebd7&nbsp;]</span>
+					<span color="#008000" title="Ao:#[008000]" style="background:#008000;">Ao[&nbsp;#008000&nbsp;]</span>
+					<span color="#8db600" title="Apple green:#[8db600]" style="background:#8db600;">Apple green[&nbsp;#8db600&nbsp;]</span>
+					<span color="#fbceb1" title="Apricot:#[fbceb1]" style="background:#fbceb1;">Apricot[&nbsp;#fbceb1&nbsp;]</span>
+					<span color="#00ffff" title="Aqua:#[00ffff]" style="background:#00ffff;">Aqua[&nbsp;#00ffff&nbsp;]</span>
+					<span color="#7fffd4" title="Aquamarine:#[7fffd4]" style="background:#7fffd4;">Aquamarine[&nbsp;#7fffd4&nbsp;]</span>
+					<span color="#4b5320" title="Army green:#[4b5320]" style="background:#4b5320;">Army green[&nbsp;#4b5320&nbsp;]</span>
+					<span color="#e9d66b" title="Arylide yellow:#[e9d66b]" style="background:#e9d66b;">Arylide yellow[&nbsp;#e9d66b&nbsp;]</span>
+					<span color="#b2beb5" title="Ash grey:#[b2beb5]" style="background:#b2beb5;">Ash grey[&nbsp;#b2beb5&nbsp;]</span>
+					<span color="#87a96b" title="Asparagus:#[87a96b]" style="background:#87a96b;">Asparagus[&nbsp;#87a96b&nbsp;]</span>
+					<span color="#ff9966" title="Atomic tangerine:#[ff9966]" style="background:#ff9966;">Atomic tangerine[&nbsp;#ff9966&nbsp;]</span>
+					<span color="#a52a2a" title="Auburn:#[a52a2a]" style="background:#a52a2a;">Auburn[&nbsp;#a52a2a&nbsp;]</span>
+					<span color="#fdee00" title="Aureolin:#[fdee00]" style="background:#fdee00;">Aureolin[&nbsp;#fdee00&nbsp;]</span>
+					<span color="#6e7f80" title="AuroMetalSaurus:#[6e7f80]" style="background:#6e7f80;">AuroMetalSaurus[&nbsp;#6e7f80&nbsp;]</span>
+					<span color="#ff2052" title="Awesome:#[ff2052]" style="background:#ff2052;">Awesome[&nbsp;#ff2052&nbsp;]</span>
+					<span color="#007fff" title="Azure:#[007fff]" style="background:#007fff;">Azure[&nbsp;#007fff&nbsp;]</span>
+					<span color="#f0ffff" title="Azure mist/web:#[f0ffff]" style="background:#f0ffff;">Azure mist/web[&nbsp;#f0ffff&nbsp;]</span>
+					<span color="#89cff0" title="Baby blue:#[89cff0]" style="background:#89cff0;">Baby blue[&nbsp;#89cff0&nbsp;]</span>
+					<span color="#a1caf1" title="Baby blue eyes:#[a1caf1]" style="background:#a1caf1;">Baby blue eyes[&nbsp;#a1caf1&nbsp;]</span>
+					<span color="#f4c2c2" title="Baby pink:#[f4c2c2]" style="background:#f4c2c2;">Baby pink[&nbsp;#f4c2c2&nbsp;]</span>
+					<span color="#21abcd" title="Ball Blue:#[21abcd]" style="background:#21abcd;">Ball Blue[&nbsp;#21abcd&nbsp;]</span>
+					<span color="#fae7b5" title="Banana Mania:#[fae7b5]" style="background:#fae7b5;">Banana Mania[&nbsp;#fae7b5&nbsp;]</span>
+					<span color="#ffe135" title="Banana yellow:#[ffe135]" style="background:#ffe135;">Banana yellow[&nbsp;#ffe135&nbsp;]</span>
+					<span color="#848482" title="Battleship grey:#[848482]" style="background:#848482;">Battleship grey[&nbsp;#848482&nbsp;]</span>
+					<span color="#98777b" title="Bazaar:#[98777b]" style="background:#98777b;">Bazaar[&nbsp;#98777b&nbsp;]</span>
+					<span color="#bcd4e6" title="Beau blue:#[bcd4e6]" style="background:#bcd4e6;">Beau blue[&nbsp;#bcd4e6&nbsp;]</span>
+					<span color="#9f8170" title="Beaver:#[9f8170]" style="background:#9f8170;">Beaver[&nbsp;#9f8170&nbsp;]</span>
+					<span color="#f5f5dc" title="Beige:#[f5f5dc]" style="background:#f5f5dc;">Beige[&nbsp;#f5f5dc&nbsp;]</span>
+					<span color="#ffe4c4" title="Bisque:#[ffe4c4]" style="background:#ffe4c4;">Bisque[&nbsp;#ffe4c4&nbsp;]</span>
+					<span color="#3d2b1f" title="Bistre:#[3d2b1f]" style="background:#3d2b1f;">Bistre[&nbsp;#3d2b1f&nbsp;]</span>
+					<span color="#fe6f5e" title="Bittersweet:#[fe6f5e]" style="background:#fe6f5e;">Bittersweet[&nbsp;#fe6f5e&nbsp;]</span>
+					<span color="#000000" title="Black:#[000000]" style="background:#000000;">Black[&nbsp;#000000&nbsp;]</span>
+					<span color="#ffebcd" title="Blanched Almond:#[ffebcd]" style="background:#ffebcd;">Blanched Almond[&nbsp;#ffebcd&nbsp;]</span>
+					<span color="#318ce7" title="Bleu de France:#[318ce7]" style="background:#318ce7;">Bleu de France[&nbsp;#318ce7&nbsp;]</span>
+					<span color="#ace5ee" title="Blizzard Blue:#[ace5ee]" style="background:#ace5ee;">Blizzard Blue[&nbsp;#ace5ee&nbsp;]</span>
+					<span color="#faf0be" title="Blond:#[faf0be]" style="background:#faf0be;">Blond[&nbsp;#faf0be&nbsp;]</span>
+					<span color="#0000ff" title="Blue:#[0000ff]" style="background:#0000ff;">Blue[&nbsp;#0000ff&nbsp;]</span>
+					<span color="#a2a2d0" title="Blue Bell:#[a2a2d0]" style="background:#a2a2d0;">Blue Bell[&nbsp;#a2a2d0&nbsp;]</span>
+					<span color="#6699cc" title="Blue Gray:#[6699cc]" style="background:#6699cc;">Blue Gray[&nbsp;#6699cc&nbsp;]</span>
+					<span color="#0d98ba" title="Blue green:#[0d98ba]" style="background:#0d98ba;">Blue green[&nbsp;#0d98ba&nbsp;]</span>
+					<span color="#8a2be2" title="Blue purple:#[8a2be2]" style="background:#8a2be2;">Blue purple[&nbsp;#8a2be2&nbsp;]</span>
+					<span color="#8a2be2" title="Blue violet:#[8a2be2]" style="background:#8a2be2;">Blue violet[&nbsp;#8a2be2&nbsp;]</span>
+					<span color="#de5d83" title="Blush:#[de5d83]" style="background:#de5d83;">Blush[&nbsp;#de5d83&nbsp;]</span>
+					<span color="#79443b" title="Bole:#[79443b]" style="background:#79443b;">Bole[&nbsp;#79443b&nbsp;]</span>
+					<span color="#0095b6" title="Bondi blue:#[0095b6]" style="background:#0095b6;">Bondi blue[&nbsp;#0095b6&nbsp;]</span>
+					<span color="#e3dac9" title="Bone:#[e3dac9]" style="background:#e3dac9;">Bone[&nbsp;#e3dac9&nbsp;]</span>
+					<span color="#cc0000" title="Boston University Red:#[cc0000]" style="background:#cc0000;">Boston University Red[&nbsp;#cc0000&nbsp;]</span>
+					<span color="#006a4e" title="Bottle green:#[006a4e]" style="background:#006a4e;">Bottle green[&nbsp;#006a4e&nbsp;]</span>
+					<span color="#873260" title="Boysenberry:#[873260]" style="background:#873260;">Boysenberry[&nbsp;#873260&nbsp;]</span>
+					<span color="#0070ff" title="Brandeis blue:#[0070ff]" style="background:#0070ff;">Brandeis blue[&nbsp;#0070ff&nbsp;]</span>
+					<span color="#b5a642" title="Brass:#[b5a642]" style="background:#b5a642;">Brass[&nbsp;#b5a642&nbsp;]</span>
+					<span color="#cb4154" title="Brick red:#[cb4154]" style="background:#cb4154;">Brick red[&nbsp;#cb4154&nbsp;]</span>
+					<span color="#1dacd6" title="Bright cerulean:#[1dacd6]" style="background:#1dacd6;">Bright cerulean[&nbsp;#1dacd6&nbsp;]</span>
+					<span color="#66ff00" title="Bright green:#[66ff00]" style="background:#66ff00;">Bright green[&nbsp;#66ff00&nbsp;]</span>
+					<span color="#bf94e4" title="Bright lavender:#[bf94e4]" style="background:#bf94e4;">Bright lavender[&nbsp;#bf94e4&nbsp;]</span>
+					<span color="#c32148" title="Bright maroon:#[c32148]" style="background:#c32148;">Bright maroon[&nbsp;#c32148&nbsp;]</span>
+					<span color="#ff007f" title="Bright pink:#[ff007f]" style="background:#ff007f;">Bright pink[&nbsp;#ff007f&nbsp;]</span>
+					<span color="#08e8de" title="Bright turquoise:#[08e8de]" style="background:#08e8de;">Bright turquoise[&nbsp;#08e8de&nbsp;]</span>
+					<span color="#d19fe8" title="Bright ube:#[d19fe8]" style="background:#d19fe8;">Bright ube[&nbsp;#d19fe8&nbsp;]</span>
+					<span color="#f4bbff" title="Brilliant lavender:#[f4bbff]" style="background:#f4bbff;">Brilliant lavender[&nbsp;#f4bbff&nbsp;]</span>
+					<span color="#ff55a3" title="Brilliant rose:#[ff55a3]" style="background:#ff55a3;">Brilliant rose[&nbsp;#ff55a3&nbsp;]</span>
+					<span color="#fb607f" title="Brink pink:#[fb607f]" style="background:#fb607f;">Brink pink[&nbsp;#fb607f&nbsp;]</span>
+					<span color="#004225" title="British racing green:#[004225]" style="background:#004225;">British racing green[&nbsp;#004225&nbsp;]</span>
+					<span color="#cd7f32" title="Bronze:#[cd7f32]" style="background:#cd7f32;">Bronze[&nbsp;#cd7f32&nbsp;]</span>
+					<span color="#a52a2a" title="Brown:#[a52a2a]" style="background:#a52a2a;">Brown[&nbsp;#a52a2a&nbsp;]</span>
+					<span color="#ffc1cc" title="Bubble gum:#[ffc1cc]" style="background:#ffc1cc;">Bubble gum[&nbsp;#ffc1cc&nbsp;]</span>
+					<span color="#e7feff" title="Bubbles:#[e7feff]" style="background:#e7feff;">Bubbles[&nbsp;#e7feff&nbsp;]</span>
+					<span color="#f0dc82" title="Buff:#[f0dc82]" style="background:#f0dc82;">Buff[&nbsp;#f0dc82&nbsp;]</span>
+					<span color="#480607" title="Bulgarian rose:#[480607]" style="background:#480607;">Bulgarian rose[&nbsp;#480607&nbsp;]</span>
+					<span color="#800020" title="Burgundy:#[800020]" style="background:#800020;">Burgundy[&nbsp;#800020&nbsp;]</span>
+					<span color="#deb887" title="Burlywood:#[deb887]" style="background:#deb887;">Burlywood[&nbsp;#deb887&nbsp;]</span>
+					<span color="#cc5500" title="Burnt orange:#[cc5500]" style="background:#cc5500;">Burnt orange[&nbsp;#cc5500&nbsp;]</span>
+					<span color="#e97451" title="Burnt sienna:#[e97451]" style="background:#e97451;">Burnt sienna[&nbsp;#e97451&nbsp;]</span>
+					<span color="#8a3324" title="Burnt umber:#[8a3324]" style="background:#8a3324;">Burnt umber[&nbsp;#8a3324&nbsp;]</span>
+					<span color="#bd33a4" title="Byzantine:#[bd33a4]" style="background:#bd33a4;">Byzantine[&nbsp;#bd33a4&nbsp;]</span>
+					<span color="#702963" title="Byzantium:#[702963]" style="background:#702963;">Byzantium[&nbsp;#702963&nbsp;]</span>
+					<span color="#007aa5" title="CG Blue:#[007aa5]" style="background:#007aa5;">CG Blue[&nbsp;#007aa5&nbsp;]</span>
+					<span color="#e03c31" title="CG Red:#[e03c31]" style="background:#e03c31;">CG Red[&nbsp;#e03c31&nbsp;]</span>
+					<span color="#536872" title="Cadet:#[536872]" style="background:#536872;">Cadet[&nbsp;#536872&nbsp;]</span>
+					<span color="#5f9ea0" title="Cadet blue:#[5f9ea0]" style="background:#5f9ea0;">Cadet blue[&nbsp;#5f9ea0&nbsp;]</span>
+					<span color="#91a3b0" title="Cadet grey:#[91a3b0]" style="background:#91a3b0;">Cadet grey[&nbsp;#91a3b0&nbsp;]</span>
+					<span color="#006b3c" title="Cadmium green:#[006b3c]" style="background:#006b3c;">Cadmium green[&nbsp;#006b3c&nbsp;]</span>
+					<span color="#ed872d" title="Cadmium orange:#[ed872d]" style="background:#ed872d;">Cadmium orange[&nbsp;#ed872d&nbsp;]</span>
+					<span color="#e30022" title="Cadmium red:#[e30022]" style="background:#e30022;">Cadmium red[&nbsp;#e30022&nbsp;]</span>
+					<span color="#fff600" title="Cadmium yellow:#[fff600]" style="background:#fff600;">Cadmium yellow[&nbsp;#fff600&nbsp;]</span>
+					<span color="#a67b5b" title="Caf茅 au lait:#[a67b5b]" style="background:#a67b5b;">Caf茅 au lait[&nbsp;#a67b5b&nbsp;]</span>
+					<span color="#4b3621" title="Caf茅 noir:#[4b3621]" style="background:#4b3621;">Caf茅 noir[&nbsp;#4b3621&nbsp;]</span>
+					<span color="#1e4d2b" title="Cal Poly Pomona green:#[1e4d2b]" style="background:#1e4d2b;">Cal Poly Pomona green[&nbsp;#1e4d2b&nbsp;]</span>
+					<span color="#a3c1ad" title="Cambridge Blue:#[a3c1ad]" style="background:#a3c1ad;">Cambridge Blue[&nbsp;#a3c1ad&nbsp;]</span>
+					<span color="#c19a6b" title="Camel:#[c19a6b]" style="background:#c19a6b;">Camel[&nbsp;#c19a6b&nbsp;]</span>
+					<span color="#78866b" title="Camouflage green:#[78866b]" style="background:#78866b;">Camouflage green[&nbsp;#78866b&nbsp;]</span>
+					<span color="#ffff99" title="Canary:#[ffff99]" style="background:#ffff99;">Canary[&nbsp;#ffff99&nbsp;]</span>
+					<span color="#ffef00" title="Canary yellow:#[ffef00]" style="background:#ffef00;">Canary yellow[&nbsp;#ffef00&nbsp;]</span>
+					<span color="#ff0800" title="Candy apple red:#[ff0800]" style="background:#ff0800;">Candy apple red[&nbsp;#ff0800&nbsp;]</span>
+					<span color="#e4717a" title="Candy pink:#[e4717a]" style="background:#e4717a;">Candy pink[&nbsp;#e4717a&nbsp;]</span>
+					<span color="#00bfff" title="Capri:#[00bfff]" style="background:#00bfff;">Capri[&nbsp;#00bfff&nbsp;]</span>
+					<span color="#592720" title="Caput mortuum:#[592720]" style="background:#592720;">Caput mortuum[&nbsp;#592720&nbsp;]</span>
+					<span color="#c41e3a" title="Cardinal:#[c41e3a]" style="background:#c41e3a;">Cardinal[&nbsp;#c41e3a&nbsp;]</span>
+					<span color="#00cc99" title="Caribbean green:#[00cc99]" style="background:#00cc99;">Caribbean green[&nbsp;#00cc99&nbsp;]</span>
+					<span color="#ff0040" title="Carmine:#[ff0040]" style="background:#ff0040;">Carmine[&nbsp;#ff0040&nbsp;]</span>
+					<span color="#eb4c42" title="Carmine pink:#[eb4c42]" style="background:#eb4c42;">Carmine pink[&nbsp;#eb4c42&nbsp;]</span>
+					<span color="#ff0038" title="Carmine red:#[ff0038]" style="background:#ff0038;">Carmine red[&nbsp;#ff0038&nbsp;]</span>
+					<span color="#ffa6c9" title="Carnation pink:#[ffa6c9]" style="background:#ffa6c9;">Carnation pink[&nbsp;#ffa6c9&nbsp;]</span>
+					<span color="#b31b1b" title="Carnelian:#[b31b1b]" style="background:#b31b1b;">Carnelian[&nbsp;#b31b1b&nbsp;]</span>
+					<span color="#99badd" title="Carolina blue:#[99badd]" style="background:#99badd;">Carolina blue[&nbsp;#99badd&nbsp;]</span>
+					<span color="#ed9121" title="Carrot orange:#[ed9121]" style="background:#ed9121;">Carrot orange[&nbsp;#ed9121&nbsp;]</span>
+					<span color="#ace1af" title="Celadon:#[ace1af]" style="background:#ace1af;">Celadon[&nbsp;#ace1af&nbsp;]</span>
+					<span color="#b2ffff" title="Celeste:#[b2ffff]" style="background:#b2ffff;">Celeste[&nbsp;#b2ffff&nbsp;]</span>
+					<span color="#4997d0" title="Celestial blue:#[4997d0]" style="background:#4997d0;">Celestial blue[&nbsp;#4997d0&nbsp;]</span>
+					<span color="#de3163" title="Cerise:#[de3163]" style="background:#de3163;">Cerise[&nbsp;#de3163&nbsp;]</span>
+					<span color="#ec3b83" title="Cerise pink:#[ec3b83]" style="background:#ec3b83;">Cerise pink[&nbsp;#ec3b83&nbsp;]</span>
+					<span color="#007ba7" title="Cerulean:#[007ba7]" style="background:#007ba7;">Cerulean[&nbsp;#007ba7&nbsp;]</span>
+					<span color="#2a52be" title="Cerulean blue:#[2a52be]" style="background:#2a52be;">Cerulean blue[&nbsp;#2a52be&nbsp;]</span>
+					<span color="#a0785a" title="Chamoisee:#[a0785a]" style="background:#a0785a;">Chamoisee[&nbsp;#a0785a&nbsp;]</span>
+					<span color="#fad6a5" title="Champagne:#[fad6a5]" style="background:#fad6a5;">Champagne[&nbsp;#fad6a5&nbsp;]</span>
+					<span color="#36454f" title="Charcoal:#[36454f]" style="background:#36454f;">Charcoal[&nbsp;#36454f&nbsp;]</span>
+					<span color="#7fff00" title="Chartreuse:#[7fff00]" style="background:#7fff00;">Chartreuse[&nbsp;#7fff00&nbsp;]</span>
+					<span color="#de3163" title="Cherry:#[de3163]" style="background:#de3163;">Cherry[&nbsp;#de3163&nbsp;]</span>
+					<span color="#ffb7c5" title="Cherry blossom pink:#[ffb7c5]" style="background:#ffb7c5;">Cherry blossom pink[&nbsp;#ffb7c5&nbsp;]</span>
+					<span color="#cd5c5c" title="Chestnut:#[cd5c5c]" style="background:#cd5c5c;">Chestnut[&nbsp;#cd5c5c&nbsp;]</span>
+					<span color="#d2691e" title="Chocolate:#[d2691e]" style="background:#d2691e;">Chocolate[&nbsp;#d2691e&nbsp;]</span>
+					<span color="#ffa700" title="Chrome yellow:#[ffa700]" style="background:#ffa700;">Chrome yellow[&nbsp;#ffa700&nbsp;]</span>
+					<span color="#98817b" title="Cinereous:#[98817b]" style="background:#98817b;">Cinereous[&nbsp;#98817b&nbsp;]</span>
+					<span color="#e34234" title="Cinnabar:#[e34234]" style="background:#e34234;">Cinnabar[&nbsp;#e34234&nbsp;]</span>
+					<span color="#d2691e" title="Cinnamon:#[d2691e]" style="background:#d2691e;">Cinnamon[&nbsp;#d2691e&nbsp;]</span>
+					<span color="#e4d00a" title="Citrine:#[e4d00a]" style="background:#e4d00a;">Citrine[&nbsp;#e4d00a&nbsp;]</span>
+					<span color="#fbcce7" title="Classic rose:#[fbcce7]" style="background:#fbcce7;">Classic rose[&nbsp;#fbcce7&nbsp;]</span>
+					<span color="#0047ab" title="Cobalt:#[0047ab]" style="background:#0047ab;">Cobalt[&nbsp;#0047ab&nbsp;]</span>
+					<span color="#d2691e" title="Cocoa brown:#[d2691e]" style="background:#d2691e;">Cocoa brown[&nbsp;#d2691e&nbsp;]</span>
+					<span color="#6f4e37" title="Coffee:#[6f4e37]" style="background:#6f4e37;">Coffee[&nbsp;#6f4e37&nbsp;]</span>
+					<span color="#9bddff" title="Columbia blue:#[9bddff]" style="background:#9bddff;">Columbia blue[&nbsp;#9bddff&nbsp;]</span>
+					<span color="#002e63" title="Cool black:#[002e63]" style="background:#002e63;">Cool black[&nbsp;#002e63&nbsp;]</span>
+					<span color="#8c92ac" title="Cool grey:#[8c92ac]" style="background:#8c92ac;">Cool grey[&nbsp;#8c92ac&nbsp;]</span>
+					<span color="#b87333" title="Copper:#[b87333]" style="background:#b87333;">Copper[&nbsp;#b87333&nbsp;]</span>
+					<span color="#996666" title="Copper rose:#[996666]" style="background:#996666;">Copper rose[&nbsp;#996666&nbsp;]</span>
+					<span color="#ff3800" title="Coquelicot:#[ff3800]" style="background:#ff3800;">Coquelicot[&nbsp;#ff3800&nbsp;]</span>
+					<span color="#ff7f50" title="Coral:#[ff7f50]" style="background:#ff7f50;">Coral[&nbsp;#ff7f50&nbsp;]</span>
+					<span color="#f88379" title="Coral pink:#[f88379]" style="background:#f88379;">Coral pink[&nbsp;#f88379&nbsp;]</span>
+					<span color="#ff4040" title="Coral red:#[ff4040]" style="background:#ff4040;">Coral red[&nbsp;#ff4040&nbsp;]</span>
+					<span color="#893f45" title="Cordovan:#[893f45]" style="background:#893f45;">Cordovan[&nbsp;#893f45&nbsp;]</span>
+					<span color="#fbec5d" title="Corn:#[fbec5d]" style="background:#fbec5d;">Corn[&nbsp;#fbec5d&nbsp;]</span>
+					<span color="#b31b1b" title="Cornell Red:#[b31b1b]" style="background:#b31b1b;">Cornell Red[&nbsp;#b31b1b&nbsp;]</span>
+					<span color="#9aceeb" title="Cornflower:#[9aceeb]" style="background:#9aceeb;">Cornflower[&nbsp;#9aceeb&nbsp;]</span>
+					<span color="#6495ed" title="Cornflower blue:#[6495ed]" style="background:#6495ed;">Cornflower blue[&nbsp;#6495ed&nbsp;]</span>
+					<span color="#fff8dc" title="Cornsilk:#[fff8dc]" style="background:#fff8dc;">Cornsilk[&nbsp;#fff8dc&nbsp;]</span>
+					<span color="#fff8e7" title="Cosmic latte:#[fff8e7]" style="background:#fff8e7;">Cosmic latte[&nbsp;#fff8e7&nbsp;]</span>
+					<span color="#ffbcd9" title="Cotton candy:#[ffbcd9]" style="background:#ffbcd9;">Cotton candy[&nbsp;#ffbcd9&nbsp;]</span>
+					<span color="#fffdd0" title="Cream:#[fffdd0]" style="background:#fffdd0;">Cream[&nbsp;#fffdd0&nbsp;]</span>
+					<span color="#dc143c" title="Crimson:#[dc143c]" style="background:#dc143c;">Crimson[&nbsp;#dc143c&nbsp;]</span>
+					<span color="#990000" title="Crimson Red:#[990000]" style="background:#990000;">Crimson Red[&nbsp;#990000&nbsp;]</span>
+					<span color="#be0032" title="Crimson glory:#[be0032]" style="background:#be0032;">Crimson glory[&nbsp;#be0032&nbsp;]</span>
+					<span color="#00ffff" title="Cyan:#[00ffff]" style="background:#00ffff;">Cyan[&nbsp;#00ffff&nbsp;]</span>
+					<span color="#ffff31" title="Daffodil:#[ffff31]" style="background:#ffff31;">Daffodil[&nbsp;#ffff31&nbsp;]</span>
+					<span color="#f0e130" title="Dandelion:#[f0e130]" style="background:#f0e130;">Dandelion[&nbsp;#f0e130&nbsp;]</span>
+					<span color="#00008b" title="Dark blue:#[00008b]" style="background:#00008b;">Dark blue[&nbsp;#00008b&nbsp;]</span>
+					<span color="#654321" title="Dark brown:#[654321]" style="background:#654321;">Dark brown[&nbsp;#654321&nbsp;]</span>
+					<span color="#5d3954" title="Dark byzantium:#[5d3954]" style="background:#5d3954;">Dark byzantium[&nbsp;#5d3954&nbsp;]</span>
+					<span color="#a40000" title="Dark candy apple red:#[a40000]" style="background:#a40000;">Dark candy apple red[&nbsp;#a40000&nbsp;]</span>
+					<span color="#08457e" title="Dark cerulean:#[08457e]" style="background:#08457e;">Dark cerulean[&nbsp;#08457e&nbsp;]</span>
+					<span color="#986960" title="Dark chestnut:#[986960]" style="background:#986960;">Dark chestnut[&nbsp;#986960&nbsp;]</span>
+					<span color="#cd5b45" title="Dark coral:#[cd5b45]" style="background:#cd5b45;">Dark coral[&nbsp;#cd5b45&nbsp;]</span>
+					<span color="#008b8b" title="Dark cyan:#[008b8b]" style="background:#008b8b;">Dark cyan[&nbsp;#008b8b&nbsp;]</span>
+					<span color="#536878" title="Dark electric blue:#[536878]" style="background:#536878;">Dark electric blue[&nbsp;#536878&nbsp;]</span>
+					<span color="#b8860b" title="Dark goldenrod:#[b8860b]" style="background:#b8860b;">Dark goldenrod[&nbsp;#b8860b&nbsp;]</span>
+					<span color="#a9a9a9" title="Dark gray:#[a9a9a9]" style="background:#a9a9a9;">Dark gray[&nbsp;#a9a9a9&nbsp;]</span>
+					<span color="#013220" title="Dark green:#[013220]" style="background:#013220;">Dark green[&nbsp;#013220&nbsp;]</span>
+					<span color="#1a2421" title="Dark jungle green:#[1a2421]" style="background:#1a2421;">Dark jungle green[&nbsp;#1a2421&nbsp;]</span>
+					<span color="#bdb76b" title="Dark khaki:#[bdb76b]" style="background:#bdb76b;">Dark khaki[&nbsp;#bdb76b&nbsp;]</span>
+					<span color="#483c32" title="Dark lava:#[483c32]" style="background:#483c32;">Dark lava[&nbsp;#483c32&nbsp;]</span>
+					<span color="#734f96" title="Dark lavender:#[734f96]" style="background:#734f96;">Dark lavender[&nbsp;#734f96&nbsp;]</span>
+					<span color="#8b008b" title="Dark magenta:#[8b008b]" style="background:#8b008b;">Dark magenta[&nbsp;#8b008b&nbsp;]</span>
+					<span color="#003366" title="Dark midnight blue:#[003366]" style="background:#003366;">Dark midnight blue[&nbsp;#003366&nbsp;]</span>
+					<span color="#556b2f" title="Dark olive green:#[556b2f]" style="background:#556b2f;">Dark olive green[&nbsp;#556b2f&nbsp;]</span>
+					<span color="#ff8c00" title="Dark orange:#[ff8c00]" style="background:#ff8c00;">Dark orange[&nbsp;#ff8c00&nbsp;]</span>
+					<span color="#9932cc" title="Dark orchid:#[9932cc]" style="background:#9932cc;">Dark orchid[&nbsp;#9932cc&nbsp;]</span>
+					<span color="#779ecb" title="Dark pastel blue:#[779ecb]" style="background:#779ecb;">Dark pastel blue[&nbsp;#779ecb&nbsp;]</span>
+					<span color="#03c03c" title="Dark pastel green:#[03c03c]" style="background:#03c03c;">Dark pastel green[&nbsp;#03c03c&nbsp;]</span>
+					<span color="#966fd6" title="Dark pastel purple:#[966fd6]" style="background:#966fd6;">Dark pastel purple[&nbsp;#966fd6&nbsp;]</span>
+					<span color="#c23b22" title="Dark pastel red:#[c23b22]" style="background:#c23b22;">Dark pastel red[&nbsp;#c23b22&nbsp;]</span>
+					<span color="#e75480" title="Dark pink:#[e75480]" style="background:#e75480;">Dark pink[&nbsp;#e75480&nbsp;]</span>
+					<span color="#003399" title="Dark powder blue:#[003399]" style="background:#003399;">Dark powder blue[&nbsp;#003399&nbsp;]</span>
+					<span color="#872657" title="Dark raspberry:#[872657]" style="background:#872657;">Dark raspberry[&nbsp;#872657&nbsp;]</span>
+					<span color="#8b0000" title="Dark red:#[8b0000]" style="background:#8b0000;">Dark red[&nbsp;#8b0000&nbsp;]</span>
+					<span color="#e9967a" title="Dark salmon:#[e9967a]" style="background:#e9967a;">Dark salmon[&nbsp;#e9967a&nbsp;]</span>
+					<span color="#560319" title="Dark scarlet:#[560319]" style="background:#560319;">Dark scarlet[&nbsp;#560319&nbsp;]</span>
+					<span color="#8fbc8f" title="Dark sea green:#[8fbc8f]" style="background:#8fbc8f;">Dark sea green[&nbsp;#8fbc8f&nbsp;]</span>
+					<span color="#3c1414" title="Dark sienna:#[3c1414]" style="background:#3c1414;">Dark sienna[&nbsp;#3c1414&nbsp;]</span>
+					<span color="#483d8b" title="Dark slate blue:#[483d8b]" style="background:#483d8b;">Dark slate blue[&nbsp;#483d8b&nbsp;]</span>
+					<span color="#2f4f4f" title="Dark slate gray:#[2f4f4f]" style="background:#2f4f4f;">Dark slate gray[&nbsp;#2f4f4f&nbsp;]</span>
+					<span color="#177245" title="Dark spring green:#[177245]" style="background:#177245;">Dark spring green[&nbsp;#177245&nbsp;]</span>
+					<span color="#918151" title="Dark tan:#[918151]" style="background:#918151;">Dark tan[&nbsp;#918151&nbsp;]</span>
+					<span color="#ffa812" title="Dark tangerine:#[ffa812]" style="background:#ffa812;">Dark tangerine[&nbsp;#ffa812&nbsp;]</span>
+					<span color="#483c32" title="Dark taupe:#[483c32]" style="background:#483c32;">Dark taupe[&nbsp;#483c32&nbsp;]</span>
+					<span color="#cc4e5c" title="Dark terra cotta:#[cc4e5c]" style="background:#cc4e5c;">Dark terra cotta[&nbsp;#cc4e5c&nbsp;]</span>
+					<span color="#00ced1" title="Dark turquoise:#[00ced1]" style="background:#00ced1;">Dark turquoise[&nbsp;#00ced1&nbsp;]</span>
+					<span color="#9400d3" title="Dark violet:#[9400d3]" style="background:#9400d3;">Dark violet[&nbsp;#9400d3&nbsp;]</span>
+					<span color="#00693e" title="Dartmouth green:#[00693e]" style="background:#00693e;">Dartmouth green[&nbsp;#00693e&nbsp;]</span>
+					<span color="#555555" title="Davy grey:#[555555]" style="background:#555555;">Davy grey[&nbsp;#555555&nbsp;]</span>
+					<span color="#d70a53" title="Debian red:#[d70a53]" style="background:#d70a53;">Debian red[&nbsp;#d70a53&nbsp;]</span>
+					<span color="#a9203e" title="Deep carmine:#[a9203e]" style="background:#a9203e;">Deep carmine[&nbsp;#a9203e&nbsp;]</span>
+					<span color="#ef3038" title="Deep carmine pink:#[ef3038]" style="background:#ef3038;">Deep carmine pink[&nbsp;#ef3038&nbsp;]</span>
+					<span color="#e9692c" title="Deep carrot orange:#[e9692c]" style="background:#e9692c;">Deep carrot orange[&nbsp;#e9692c&nbsp;]</span>
+					<span color="#da3287" title="Deep cerise:#[da3287]" style="background:#da3287;">Deep cerise[&nbsp;#da3287&nbsp;]</span>
+					<span color="#fad6a5" title="Deep champagne:#[fad6a5]" style="background:#fad6a5;">Deep champagne[&nbsp;#fad6a5&nbsp;]</span>
+					<span color="#b94e48" title="Deep chestnut:#[b94e48]" style="background:#b94e48;">Deep chestnut[&nbsp;#b94e48&nbsp;]</span>
+					<span color="#704241" title="Deep coffee:#[704241]" style="background:#704241;">Deep coffee[&nbsp;#704241&nbsp;]</span>
+					<span color="#c154c1" title="Deep fuchsia:#[c154c1]" style="background:#c154c1;">Deep fuchsia[&nbsp;#c154c1&nbsp;]</span>
+					<span color="#004b49" title="Deep jungle green:#[004b49]" style="background:#004b49;">Deep jungle green[&nbsp;#004b49&nbsp;]</span>
+					<span color="#9955bb" title="Deep lilac:#[9955bb]" style="background:#9955bb;">Deep lilac[&nbsp;#9955bb&nbsp;]</span>
+					<span color="#cc00cc" title="Deep magenta:#[cc00cc]" style="background:#cc00cc;">Deep magenta[&nbsp;#cc00cc&nbsp;]</span>
+					<span color="#ffcba4" title="Deep peach:#[ffcba4]" style="background:#ffcba4;">Deep peach[&nbsp;#ffcba4&nbsp;]</span>
+					<span color="#ff1493" title="Deep pink:#[ff1493]" style="background:#ff1493;">Deep pink[&nbsp;#ff1493&nbsp;]</span>
+					<span color="#ff9933" title="Deep saffron:#[ff9933]" style="background:#ff9933;">Deep saffron[&nbsp;#ff9933&nbsp;]</span>
+					<span color="#00bfff" title="Deep sky blue:#[00bfff]" style="background:#00bfff;">Deep sky blue[&nbsp;#00bfff&nbsp;]</span>
+					<span color="#1560bd" title="Denim:#[1560bd]" style="background:#1560bd;">Denim[&nbsp;#1560bd&nbsp;]</span>
+					<span color="#c19a6b" title="Desert:#[c19a6b]" style="background:#c19a6b;">Desert[&nbsp;#c19a6b&nbsp;]</span>
+					<span color="#edc9af" title="Desert sand:#[edc9af]" style="background:#edc9af;">Desert sand[&nbsp;#edc9af&nbsp;]</span>
+					<span color="#696969" title="Dim gray:#[696969]" style="background:#696969;">Dim gray[&nbsp;#696969&nbsp;]</span>
+					<span color="#1e90ff" title="Dodger blue:#[1e90ff]" style="background:#1e90ff;">Dodger blue[&nbsp;#1e90ff&nbsp;]</span>
+					<span color="#d71868" title="Dogwood rose:#[d71868]" style="background:#d71868;">Dogwood rose[&nbsp;#d71868&nbsp;]</span>
+					<span color="#85bb65" title="Dollar bill:#[85bb65]" style="background:#85bb65;">Dollar bill[&nbsp;#85bb65&nbsp;]</span>
+					<span color="#967117" title="Drab:#[967117]" style="background:#967117;">Drab[&nbsp;#967117&nbsp;]</span>
+					<span color="#00009c" title="Duke blue:#[00009c]" style="background:#00009c;">Duke blue[&nbsp;#00009c&nbsp;]</span>
+					<span color="#e1a95f" title="Earth yellow:#[e1a95f]" style="background:#e1a95f;">Earth yellow[&nbsp;#e1a95f&nbsp;]</span>
+					<span color="#c2b280" title="Ecru:#[c2b280]" style="background:#c2b280;">Ecru[&nbsp;#c2b280&nbsp;]</span>
+					<span color="#614051" title="Eggplant:#[614051]" style="background:#614051;">Eggplant[&nbsp;#614051&nbsp;]</span>
+					<span color="#f0ead6" title="Eggshell:#[f0ead6]" style="background:#f0ead6;">Eggshell[&nbsp;#f0ead6&nbsp;]</span>
+					<span color="#1034a6" title="Egyptian blue:#[1034a6]" style="background:#1034a6;">Egyptian blue[&nbsp;#1034a6&nbsp;]</span>
+					<span color="#7df9ff" title="Electric blue:#[7df9ff]" style="background:#7df9ff;">Electric blue[&nbsp;#7df9ff&nbsp;]</span>
+					<span color="#ff003f" title="Electric crimson:#[ff003f]" style="background:#ff003f;">Electric crimson[&nbsp;#ff003f&nbsp;]</span>
+					<span color="#00ffff" title="Electric cyan:#[00ffff]" style="background:#00ffff;">Electric cyan[&nbsp;#00ffff&nbsp;]</span>
+					<span color="#00ff00" title="Electric green:#[00ff00]" style="background:#00ff00;">Electric green[&nbsp;#00ff00&nbsp;]</span>
+					<span color="#6f00ff" title="Electric indigo:#[6f00ff]" style="background:#6f00ff;">Electric indigo[&nbsp;#6f00ff&nbsp;]</span>
+					<span color="#f4bbff" title="Electric lavender:#[f4bbff]" style="background:#f4bbff;">Electric lavender[&nbsp;#f4bbff&nbsp;]</span>
+					<span color="#ccff00" title="Electric lime:#[ccff00]" style="background:#ccff00;">Electric lime[&nbsp;#ccff00&nbsp;]</span>
+					<span color="#bf00ff" title="Electric purple:#[bf00ff]" style="background:#bf00ff;">Electric purple[&nbsp;#bf00ff&nbsp;]</span>
+					<span color="#3f00ff" title="Electric ultramarine:#[3f00ff]" style="background:#3f00ff;">Electric ultramarine[&nbsp;#3f00ff&nbsp;]</span>
+					<span color="#8f00ff" title="Electric violet:#[8f00ff]" style="background:#8f00ff;">Electric violet[&nbsp;#8f00ff&nbsp;]</span>
+					<span color="#ffff00" title="Electric yellow:#[ffff00]" style="background:#ffff00;">Electric yellow[&nbsp;#ffff00&nbsp;]</span>
+					<span color="#50c878" title="Emerald:#[50c878]" style="background:#50c878;">Emerald[&nbsp;#50c878&nbsp;]</span>
+					<span color="#96c8a2" title="Eton blue:#[96c8a2]" style="background:#96c8a2;">Eton blue[&nbsp;#96c8a2&nbsp;]</span>
+					<span color="#c19a6b" title="Fallow:#[c19a6b]" style="background:#c19a6b;">Fallow[&nbsp;#c19a6b&nbsp;]</span>
+					<span color="#801818" title="Falu red:#[801818]" style="background:#801818;">Falu red[&nbsp;#801818&nbsp;]</span>
+					<span color="#ff00ff" title="Famous:#[ff00ff]" style="background:#ff00ff;">Famous[&nbsp;#ff00ff&nbsp;]</span>
+					<span color="#b53389" title="Fandango:#[b53389]" style="background:#b53389;">Fandango[&nbsp;#b53389&nbsp;]</span>
+					<span color="#f400a1" title="Fashion fuchsia:#[f400a1]" style="background:#f400a1;">Fashion fuchsia[&nbsp;#f400a1&nbsp;]</span>
+					<span color="#e5aa70" title="Fawn:#[e5aa70]" style="background:#e5aa70;">Fawn[&nbsp;#e5aa70&nbsp;]</span>
+					<span color="#4d5d53" title="Feldgrau:#[4d5d53]" style="background:#4d5d53;">Feldgrau[&nbsp;#4d5d53&nbsp;]</span>
+					<span color="#71bc78" title="Fern:#[71bc78]" style="background:#71bc78;">Fern[&nbsp;#71bc78&nbsp;]</span>
+					<span color="#4f7942" title="Fern green:#[4f7942]" style="background:#4f7942;">Fern green[&nbsp;#4f7942&nbsp;]</span>
+					<span color="#ff2800" title="Ferrari Red:#[ff2800]" style="background:#ff2800;">Ferrari Red[&nbsp;#ff2800&nbsp;]</span>
+					<span color="#6c541e" title="Field drab:#[6c541e]" style="background:#6c541e;">Field drab[&nbsp;#6c541e&nbsp;]</span>
+					<span color="#ce2029" title="Fire engine red:#[ce2029]" style="background:#ce2029;">Fire engine red[&nbsp;#ce2029&nbsp;]</span>
+					<span color="#b22222" title="Firebrick:#[b22222]" style="background:#b22222;">Firebrick[&nbsp;#b22222&nbsp;]</span>
+					<span color="#e25822" title="Flame:#[e25822]" style="background:#e25822;">Flame[&nbsp;#e25822&nbsp;]</span>
+					<span color="#fc8eac" title="Flamingo pink:#[fc8eac]" style="background:#fc8eac;">Flamingo pink[&nbsp;#fc8eac&nbsp;]</span>
+					<span color="#f7e98e" title="Flavescent:#[f7e98e]" style="background:#f7e98e;">Flavescent[&nbsp;#f7e98e&nbsp;]</span>
+					<span color="#eedc82" title="Flax:#[eedc82]" style="background:#eedc82;">Flax[&nbsp;#eedc82&nbsp;]</span>
+					<span color="#fffaf0" title="Floral white:#[fffaf0]" style="background:#fffaf0;">Floral white[&nbsp;#fffaf0&nbsp;]</span>
+					<span color="#ffbf00" title="Fluorescent orange:#[ffbf00]" style="background:#ffbf00;">Fluorescent orange[&nbsp;#ffbf00&nbsp;]</span>
+					<span color="#ff1493" title="Fluorescent pink:#[ff1493]" style="background:#ff1493;">Fluorescent pink[&nbsp;#ff1493&nbsp;]</span>
+					<span color="#ccff00" title="Fluorescent yellow:#[ccff00]" style="background:#ccff00;">Fluorescent yellow[&nbsp;#ccff00&nbsp;]</span>
+					<span color="#ff004f" title="Folly:#[ff004f]" style="background:#ff004f;">Folly[&nbsp;#ff004f&nbsp;]</span>
+					<span color="#228b22" title="Forest green:#[228b22]" style="background:#228b22;">Forest green[&nbsp;#228b22&nbsp;]</span>
+					<span color="#a67b5b" title="French beige:#[a67b5b]" style="background:#a67b5b;">French beige[&nbsp;#a67b5b&nbsp;]</span>
+					<span color="#0072bb" title="French blue:#[0072bb]" style="background:#0072bb;">French blue[&nbsp;#0072bb&nbsp;]</span>
+					<span color="#86608e" title="French lilac:#[86608e]" style="background:#86608e;">French lilac[&nbsp;#86608e&nbsp;]</span>
+					<span color="#f64a8a" title="French rose:#[f64a8a]" style="background:#f64a8a;">French rose[&nbsp;#f64a8a&nbsp;]</span>
+					<span color="#ff00ff" title="Fuchsia:#[ff00ff]" style="background:#ff00ff;">Fuchsia[&nbsp;#ff00ff&nbsp;]</span>
+					<span color="#ff77ff" title="Fuchsia pink:#[ff77ff]" style="background:#ff77ff;">Fuchsia pink[&nbsp;#ff77ff&nbsp;]</span>
+					<span color="#e48400" title="Fulvous:#[e48400]" style="background:#e48400;">Fulvous[&nbsp;#e48400&nbsp;]</span>
+					<span color="#cc6666" title="Fuzzy Wuzzy:#[cc6666]" style="background:#cc6666;">Fuzzy Wuzzy[&nbsp;#cc6666&nbsp;]</span>
+					<span color="#dcdcdc" title="Gainsboro:#[dcdcdc]" style="background:#dcdcdc;">Gainsboro[&nbsp;#dcdcdc&nbsp;]</span>
+					<span color="#e49b0f" title="Gamboge:#[e49b0f]" style="background:#e49b0f;">Gamboge[&nbsp;#e49b0f&nbsp;]</span>
+					<span color="#f8f8ff" title="Ghost white:#[f8f8ff]" style="background:#f8f8ff;">Ghost white[&nbsp;#f8f8ff&nbsp;]</span>
+					<span color="#b06500" title="Ginger:#[b06500]" style="background:#b06500;">Ginger[&nbsp;#b06500&nbsp;]</span>
+					<span color="#6082b6" title="Glaucous:#[6082b6]" style="background:#6082b6;">Glaucous[&nbsp;#6082b6&nbsp;]</span>
+					<span color="#e6e8fa" title="Glitter:#[e6e8fa]" style="background:#e6e8fa;">Glitter[&nbsp;#e6e8fa&nbsp;]</span>
+					<span color="#ffd700" title="Gold:#[ffd700]" style="background:#ffd700;">Gold[&nbsp;#ffd700&nbsp;]</span>
+					<span color="#996515" title="Golden brown:#[996515]" style="background:#996515;">Golden brown[&nbsp;#996515&nbsp;]</span>
+					<span color="#fcc200" title="Golden poppy:#[fcc200]" style="background:#fcc200;">Golden poppy[&nbsp;#fcc200&nbsp;]</span>
+					<span color="#ffdf00" title="Golden yellow:#[ffdf00]" style="background:#ffdf00;">Golden yellow[&nbsp;#ffdf00&nbsp;]</span>
+					<span color="#daa520" title="Goldenrod:#[daa520]" style="background:#daa520;">Goldenrod[&nbsp;#daa520&nbsp;]</span>
+					<span color="#a8e4a0" title="Granny Smith Apple:#[a8e4a0]" style="background:#a8e4a0;">Granny Smith Apple[&nbsp;#a8e4a0&nbsp;]</span>
+					<span color="#808080" title="Gray:#[808080]" style="background:#808080;">Gray[&nbsp;#808080&nbsp;]</span>
+					<span color="#465945" title="Gray asparagus:#[465945]" style="background:#465945;">Gray asparagus[&nbsp;#465945&nbsp;]</span>
+					<span color="#00ff00" title="Green:#[00ff00]" style="background:#00ff00;">Green[&nbsp;#00ff00&nbsp;]</span>
+					<span color="#1164b4" title="Green Blue:#[1164b4]" style="background:#1164b4;">Green Blue[&nbsp;#1164b4&nbsp;]</span>
+					<span color="#adff2f" title="Green yellow:#[adff2f]" style="background:#adff2f;">Green yellow[&nbsp;#adff2f&nbsp;]</span>
+					<span color="#a99a86" title="Grullo:#[a99a86]" style="background:#a99a86;">Grullo[&nbsp;#a99a86&nbsp;]</span>
+					<span color="#00ff7f" title="Guppie green:#[00ff7f]" style="background:#00ff7f;">Guppie green[&nbsp;#00ff7f&nbsp;]</span>
+					<span color="#663854" title="Halay脿 煤be:#[663854]" style="background:#663854;">Halay脿 煤be[&nbsp;#663854&nbsp;]</span>
+					<span color="#446ccf" title="Han blue:#[446ccf]" style="background:#446ccf;">Han blue[&nbsp;#446ccf&nbsp;]</span>
+					<span color="#5218fa" title="Han purple:#[5218fa]" style="background:#5218fa;">Han purple[&nbsp;#5218fa&nbsp;]</span>
+					<span color="#e9d66b" title="Hansa yellow:#[e9d66b]" style="background:#e9d66b;">Hansa yellow[&nbsp;#e9d66b&nbsp;]</span>
+					<span color="#3fff00" title="Harlequin:#[3fff00]" style="background:#3fff00;">Harlequin[&nbsp;#3fff00&nbsp;]</span>
+					<span color="#c90016" title="Harvard crimson:#[c90016]" style="background:#c90016;">Harvard crimson[&nbsp;#c90016&nbsp;]</span>
+					<span color="#da9100" title="Harvest Gold:#[da9100]" style="background:#da9100;">Harvest Gold[&nbsp;#da9100&nbsp;]</span>
+					<span color="#808000" title="Heart Gold:#[808000]" style="background:#808000;">Heart Gold[&nbsp;#808000&nbsp;]</span>
+					<span color="#df73ff" title="Heliotrope:#[df73ff]" style="background:#df73ff;">Heliotrope[&nbsp;#df73ff&nbsp;]</span>
+					<span color="#f400a1" title="Hollywood cerise:#[f400a1]" style="background:#f400a1;">Hollywood cerise[&nbsp;#f400a1&nbsp;]</span>
+					<span color="#f0fff0" title="Honeydew:#[f0fff0]" style="background:#f0fff0;">Honeydew[&nbsp;#f0fff0&nbsp;]</span>
+					<span color="#49796b" title="Hooker green:#[49796b]" style="background:#49796b;">Hooker green[&nbsp;#49796b&nbsp;]</span>
+					<span color="#ff1dce" title="Hot magenta:#[ff1dce]" style="background:#ff1dce;">Hot magenta[&nbsp;#ff1dce&nbsp;]</span>
+					<span color="#ff69b4" title="Hot pink:#[ff69b4]" style="background:#ff69b4;">Hot pink[&nbsp;#ff69b4&nbsp;]</span>
+					<span color="#355e3b" title="Hunter green:#[355e3b]" style="background:#355e3b;">Hunter green[&nbsp;#355e3b&nbsp;]</span>
+					<span color="#fcf75e" title="Icterine:#[fcf75e]" style="background:#fcf75e;">Icterine[&nbsp;#fcf75e&nbsp;]</span>
+					<span color="#b2ec5d" title="Inchworm:#[b2ec5d]" style="background:#b2ec5d;">Inchworm[&nbsp;#b2ec5d&nbsp;]</span>
+					<span color="#138808" title="India green:#[138808]" style="background:#138808;">India green[&nbsp;#138808&nbsp;]</span>
+					<span color="#cd5c5c" title="Indian red:#[cd5c5c]" style="background:#cd5c5c;">Indian red[&nbsp;#cd5c5c&nbsp;]</span>
+					<span color="#e3a857" title="Indian yellow:#[e3a857]" style="background:#e3a857;">Indian yellow[&nbsp;#e3a857&nbsp;]</span>
+					<span color="#4b0082" title="Indigo:#[4b0082]" style="background:#4b0082;">Indigo[&nbsp;#4b0082&nbsp;]</span>
+					<span color="#002fa7" title="International Klein Blue:#[002fa7]" style="background:#002fa7;">International Klein Blue[&nbsp;#002fa7&nbsp;]</span>
+					<span color="#ff4f00" title="International orange:#[ff4f00]" style="background:#ff4f00;">International orange[&nbsp;#ff4f00&nbsp;]</span>
+					<span color="#5a4fcf" title="Iris:#[5a4fcf]" style="background:#5a4fcf;">Iris[&nbsp;#5a4fcf&nbsp;]</span>
+					<span color="#f4f0ec" title="Isabelline:#[f4f0ec]" style="background:#f4f0ec;">Isabelline[&nbsp;#f4f0ec&nbsp;]</span>
+					<span color="#009000" title="Islamic green:#[009000]" style="background:#009000;">Islamic green[&nbsp;#009000&nbsp;]</span>
+					<span color="#fffff0" title="Ivory:#[fffff0]" style="background:#fffff0;">Ivory[&nbsp;#fffff0&nbsp;]</span>
+					<span color="#00a86b" title="Jade:#[00a86b]" style="background:#00a86b;">Jade[&nbsp;#00a86b&nbsp;]</span>
+					<span color="#f8de7e" title="Jasmine:#[f8de7e]" style="background:#f8de7e;">Jasmine[&nbsp;#f8de7e&nbsp;]</span>
+					<span color="#d73b3e" title="Jasper:#[d73b3e]" style="background:#d73b3e;">Jasper[&nbsp;#d73b3e&nbsp;]</span>
+					<span color="#a50b5e" title="Jazzberry jam:#[a50b5e]" style="background:#a50b5e;">Jazzberry jam[&nbsp;#a50b5e&nbsp;]</span>
+					<span color="#fada5e" title="Jonquil:#[fada5e]" style="background:#fada5e;">Jonquil[&nbsp;#fada5e&nbsp;]</span>
+					<span color="#bdda57" title="June bud:#[bdda57]" style="background:#bdda57;">June bud[&nbsp;#bdda57&nbsp;]</span>
+					<span color="#29ab87" title="Jungle green:#[29ab87]" style="background:#29ab87;">Jungle green[&nbsp;#29ab87&nbsp;]</span>
+					<span color="#e8000d" title="KU Crimson:#[e8000d]" style="background:#e8000d;">KU Crimson[&nbsp;#e8000d&nbsp;]</span>
+					<span color="#4cbb17" title="Kelly green:#[4cbb17]" style="background:#4cbb17;">Kelly green[&nbsp;#4cbb17&nbsp;]</span>
+					<span color="#c3b091" title="Khaki:#[c3b091]" style="background:#c3b091;">Khaki[&nbsp;#c3b091&nbsp;]</span>
+					<span color="#087830" title="La Salle Green:#[087830]" style="background:#087830;">La Salle Green[&nbsp;#087830&nbsp;]</span>
+					<span color="#d6cadd" title="Languid lavender:#[d6cadd]" style="background:#d6cadd;">Languid lavender[&nbsp;#d6cadd&nbsp;]</span>
+					<span color="#26619c" title="Lapis lazuli:#[26619c]" style="background:#26619c;">Lapis lazuli[&nbsp;#26619c&nbsp;]</span>
+					<span color="#fefe22" title="Laser Lemon:#[fefe22]" style="background:#fefe22;">Laser Lemon[&nbsp;#fefe22&nbsp;]</span>
+					<span color="#a9ba9d" title="Laurel green:#[a9ba9d]" style="background:#a9ba9d;">Laurel green[&nbsp;#a9ba9d&nbsp;]</span>
+					<span color="#cf1020" title="Lava:#[cf1020]" style="background:#cf1020;">Lava[&nbsp;#cf1020&nbsp;]</span>
+					<span color="#e6e6fa" title="Lavender:#[e6e6fa]" style="background:#e6e6fa;">Lavender[&nbsp;#e6e6fa&nbsp;]</span>
+					<span color="#ccccff" title="Lavender blue:#[ccccff]" style="background:#ccccff;">Lavender blue[&nbsp;#ccccff&nbsp;]</span>
+					<span color="#fff0f5" title="Lavender blush:#[fff0f5]" style="background:#fff0f5;">Lavender blush[&nbsp;#fff0f5&nbsp;]</span>
+					<span color="#c4c3d0" title="Lavender gray:#[c4c3d0]" style="background:#c4c3d0;">Lavender gray[&nbsp;#c4c3d0&nbsp;]</span>
+					<span color="#9457eb" title="Lavender indigo:#[9457eb]" style="background:#9457eb;">Lavender indigo[&nbsp;#9457eb&nbsp;]</span>
+					<span color="#ee82ee" title="Lavender magenta:#[ee82ee]" style="background:#ee82ee;">Lavender magenta[&nbsp;#ee82ee&nbsp;]</span>
+					<span color="#e6e6fa" title="Lavender mist:#[e6e6fa]" style="background:#e6e6fa;">Lavender mist[&nbsp;#e6e6fa&nbsp;]</span>
+					<span color="#fbaed2" title="Lavender pink:#[fbaed2]" style="background:#fbaed2;">Lavender pink[&nbsp;#fbaed2&nbsp;]</span>
+					<span color="#967bb6" title="Lavender purple:#[967bb6]" style="background:#967bb6;">Lavender purple[&nbsp;#967bb6&nbsp;]</span>
+					<span color="#fba0e3" title="Lavender rose:#[fba0e3]" style="background:#fba0e3;">Lavender rose[&nbsp;#fba0e3&nbsp;]</span>
+					<span color="#7cfc00" title="Lawn green:#[7cfc00]" style="background:#7cfc00;">Lawn green[&nbsp;#7cfc00&nbsp;]</span>
+					<span color="#fff700" title="Lemon:#[fff700]" style="background:#fff700;">Lemon[&nbsp;#fff700&nbsp;]</span>
+					<span color="#fff44f" title="Lemon Yellow:#[fff44f]" style="background:#fff44f;">Lemon Yellow[&nbsp;#fff44f&nbsp;]</span>
+					<span color="#fffacd" title="Lemon chiffon:#[fffacd]" style="background:#fffacd;">Lemon chiffon[&nbsp;#fffacd&nbsp;]</span>
+					<span color="#bfff00" title="Lemon lime:#[bfff00]" style="background:#bfff00;">Lemon lime[&nbsp;#bfff00&nbsp;]</span>
+					<span color="#f56991" title="Light Crimson:#[f56991]" style="background:#f56991;">Light Crimson[&nbsp;#f56991&nbsp;]</span>
+					<span color="#e68fac" title="Light Thulian pink:#[e68fac]" style="background:#e68fac;">Light Thulian pink[&nbsp;#e68fac&nbsp;]</span>
+					<span color="#fdd5b1" title="Light apricot:#[fdd5b1]" style="background:#fdd5b1;">Light apricot[&nbsp;#fdd5b1&nbsp;]</span>
+					<span color="#add8e6" title="Light blue:#[add8e6]" style="background:#add8e6;">Light blue[&nbsp;#add8e6&nbsp;]</span>
+					<span color="#b5651d" title="Light brown:#[b5651d]" style="background:#b5651d;">Light brown[&nbsp;#b5651d&nbsp;]</span>
+					<span color="#e66771" title="Light carmine pink:#[e66771]" style="background:#e66771;">Light carmine pink[&nbsp;#e66771&nbsp;]</span>
+					<span color="#f08080" title="Light coral:#[f08080]" style="background:#f08080;">Light coral[&nbsp;#f08080&nbsp;]</span>
+					<span color="#93ccea" title="Light cornflower blue:#[93ccea]" style="background:#93ccea;">Light cornflower blue[&nbsp;#93ccea&nbsp;]</span>
+					<span color="#e0ffff" title="Light cyan:#[e0ffff]" style="background:#e0ffff;">Light cyan[&nbsp;#e0ffff&nbsp;]</span>
+					<span color="#f984ef" title="Light fuchsia pink:#[f984ef]" style="background:#f984ef;">Light fuchsia pink[&nbsp;#f984ef&nbsp;]</span>
+					<span color="#fafad2" title="Light goldenrod yellow:#[fafad2]" style="background:#fafad2;">Light goldenrod yellow[&nbsp;#fafad2&nbsp;]</span>
+					<span color="#d3d3d3" title="Light gray:#[d3d3d3]" style="background:#d3d3d3;">Light gray[&nbsp;#d3d3d3&nbsp;]</span>
+					<span color="#90ee90" title="Light green:#[90ee90]" style="background:#90ee90;">Light green[&nbsp;#90ee90&nbsp;]</span>
+					<span color="#f0e68c" title="Light khaki:#[f0e68c]" style="background:#f0e68c;">Light khaki[&nbsp;#f0e68c&nbsp;]</span>
+					<span color="#b19cd9" title="Light pastel purple:#[b19cd9]" style="background:#b19cd9;">Light pastel purple[&nbsp;#b19cd9&nbsp;]</span>
+					<span color="#ffb6c1" title="Light pink:#[ffb6c1]" style="background:#ffb6c1;">Light pink[&nbsp;#ffb6c1&nbsp;]</span>
+					<span color="#ffa07a" title="Light salmon:#[ffa07a]" style="background:#ffa07a;">Light salmon[&nbsp;#ffa07a&nbsp;]</span>
+					<span color="#ff9999" title="Light salmon pink:#[ff9999]" style="background:#ff9999;">Light salmon pink[&nbsp;#ff9999&nbsp;]</span>
+					<span color="#20b2aa" title="Light sea green:#[20b2aa]" style="background:#20b2aa;">Light sea green[&nbsp;#20b2aa&nbsp;]</span>
+					<span color="#87cefa" title="Light sky blue:#[87cefa]" style="background:#87cefa;">Light sky blue[&nbsp;#87cefa&nbsp;]</span>
+					<span color="#778899" title="Light slate gray:#[778899]" style="background:#778899;">Light slate gray[&nbsp;#778899&nbsp;]</span>
+					<span color="#b38b6d" title="Light taupe:#[b38b6d]" style="background:#b38b6d;">Light taupe[&nbsp;#b38b6d&nbsp;]</span>
+					<span color="#ffffed" title="Light yellow:#[ffffed]" style="background:#ffffed;">Light yellow[&nbsp;#ffffed&nbsp;]</span>
+					<span color="#c8a2c8" title="Lilac:#[c8a2c8]" style="background:#c8a2c8;">Lilac[&nbsp;#c8a2c8&nbsp;]</span>
+					<span color="#bfff00" title="Lime:#[bfff00]" style="background:#bfff00;">Lime[&nbsp;#bfff00&nbsp;]</span>
+					<span color="#32cd32" title="Lime green:#[32cd32]" style="background:#32cd32;">Lime green[&nbsp;#32cd32&nbsp;]</span>
+					<span color="#195905" title="Lincoln green:#[195905]" style="background:#195905;">Lincoln green[&nbsp;#195905&nbsp;]</span>
+					<span color="#faf0e6" title="Linen:#[faf0e6]" style="background:#faf0e6;">Linen[&nbsp;#faf0e6&nbsp;]</span>
+					<span color="#c19a6b" title="Lion:#[c19a6b]" style="background:#c19a6b;">Lion[&nbsp;#c19a6b&nbsp;]</span>
+					<span color="#534b4f" title="Liver:#[534b4f]" style="background:#534b4f;">Liver[&nbsp;#534b4f&nbsp;]</span>
+					<span color="#e62020" title="Lust:#[e62020]" style="background:#e62020;">Lust[&nbsp;#e62020&nbsp;]</span>
+					<span color="#18453b" title="MSU Green:#[18453b]" style="background:#18453b;">MSU Green[&nbsp;#18453b&nbsp;]</span>
+					<span color="#ffbd88" title="Macaroni and Cheese:#[ffbd88]" style="background:#ffbd88;">Macaroni and Cheese[&nbsp;#ffbd88&nbsp;]</span>
+					<span color="#ff00ff" title="Magenta:#[ff00ff]" style="background:#ff00ff;">Magenta[&nbsp;#ff00ff&nbsp;]</span>
+					<span color="#aaf0d1" title="Magic mint:#[aaf0d1]" style="background:#aaf0d1;">Magic mint[&nbsp;#aaf0d1&nbsp;]</span>
+					<span color="#f8f4ff" title="Magnolia:#[f8f4ff]" style="background:#f8f4ff;">Magnolia[&nbsp;#f8f4ff&nbsp;]</span>
+					<span color="#c04000" title="Mahogany:#[c04000]" style="background:#c04000;">Mahogany[&nbsp;#c04000&nbsp;]</span>
+					<span color="#fbec5d" title="Maize:#[fbec5d]" style="background:#fbec5d;">Maize[&nbsp;#fbec5d&nbsp;]</span>
+					<span color="#6050dc" title="Majorelle Blue:#[6050dc]" style="background:#6050dc;">Majorelle Blue[&nbsp;#6050dc&nbsp;]</span>
+					<span color="#0bda51" title="Malachite:#[0bda51]" style="background:#0bda51;">Malachite[&nbsp;#0bda51&nbsp;]</span>
+					<span color="#979aaa" title="Manatee:#[979aaa]" style="background:#979aaa;">Manatee[&nbsp;#979aaa&nbsp;]</span>
+					<span color="#ff8243" title="Mango Tango:#[ff8243]" style="background:#ff8243;">Mango Tango[&nbsp;#ff8243&nbsp;]</span>
+					<span color="#74c365" title="Mantis:#[74c365]" style="background:#74c365;">Mantis[&nbsp;#74c365&nbsp;]</span>
+					<span color="#800000" title="Maroon:#[800000]" style="background:#800000;">Maroon[&nbsp;#800000&nbsp;]</span>
+					<span color="#e0b0ff" title="Mauve:#[e0b0ff]" style="background:#e0b0ff;">Mauve[&nbsp;#e0b0ff&nbsp;]</span>
+					<span color="#915f6d" title="Mauve taupe:#[915f6d]" style="background:#915f6d;">Mauve taupe[&nbsp;#915f6d&nbsp;]</span>
+					<span color="#ef98aa" title="Mauvelous:#[ef98aa]" style="background:#ef98aa;">Mauvelous[&nbsp;#ef98aa&nbsp;]</span>
+					<span color="#73c2fb" title="Maya blue:#[73c2fb]" style="background:#73c2fb;">Maya blue[&nbsp;#73c2fb&nbsp;]</span>
+					<span color="#e5b73b" title="Meat brown:#[e5b73b]" style="background:#e5b73b;">Meat brown[&nbsp;#e5b73b&nbsp;]</span>
+					<span color="#0067a5" title="Medium Persian blue:#[0067a5]" style="background:#0067a5;">Medium Persian blue[&nbsp;#0067a5&nbsp;]</span>
+					<span color="#66ddaa" title="Medium aquamarine:#[66ddaa]" style="background:#66ddaa;">Medium aquamarine[&nbsp;#66ddaa&nbsp;]</span>
+					<span color="#0000cd" title="Medium blue:#[0000cd]" style="background:#0000cd;">Medium blue[&nbsp;#0000cd&nbsp;]</span>
+					<span color="#e2062c" title="Medium candy apple red:#[e2062c]" style="background:#e2062c;">Medium candy apple red[&nbsp;#e2062c&nbsp;]</span>
+					<span color="#af4035" title="Medium carmine:#[af4035]" style="background:#af4035;">Medium carmine[&nbsp;#af4035&nbsp;]</span>
+					<span color="#f3e5ab" title="Medium champagne:#[f3e5ab]" style="background:#f3e5ab;">Medium champagne[&nbsp;#f3e5ab&nbsp;]</span>
+					<span color="#035096" title="Medium electric blue:#[035096]" style="background:#035096;">Medium electric blue[&nbsp;#035096&nbsp;]</span>
+					<span color="#1c352d" title="Medium jungle green:#[1c352d]" style="background:#1c352d;">Medium jungle green[&nbsp;#1c352d&nbsp;]</span>
+					<span color="#dda0dd" title="Medium lavender magenta:#[dda0dd]" style="background:#dda0dd;">Medium lavender magenta[&nbsp;#dda0dd&nbsp;]</span>
+					<span color="#ba55d3" title="Medium orchid:#[ba55d3]" style="background:#ba55d3;">Medium orchid[&nbsp;#ba55d3&nbsp;]</span>
+					<span color="#9370db" title="Medium purple:#[9370db]" style="background:#9370db;">Medium purple[&nbsp;#9370db&nbsp;]</span>
+					<span color="#bb3385" title="Medium red violet:#[bb3385]" style="background:#bb3385;">Medium red violet[&nbsp;#bb3385&nbsp;]</span>
+					<span color="#3cb371" title="Medium sea green:#[3cb371]" style="background:#3cb371;">Medium sea green[&nbsp;#3cb371&nbsp;]</span>
+					<span color="#7b68ee" title="Medium slate blue:#[7b68ee]" style="background:#7b68ee;">Medium slate blue[&nbsp;#7b68ee&nbsp;]</span>
+					<span color="#c9dc87" title="Medium spring bud:#[c9dc87]" style="background:#c9dc87;">Medium spring bud[&nbsp;#c9dc87&nbsp;]</span>
+					<span color="#00fa9a" title="Medium spring green:#[00fa9a]" style="background:#00fa9a;">Medium spring green[&nbsp;#00fa9a&nbsp;]</span>
+					<span color="#674c47" title="Medium taupe:#[674c47]" style="background:#674c47;">Medium taupe[&nbsp;#674c47&nbsp;]</span>
+					<span color="#0054b4" title="Medium teal blue:#[0054b4]" style="background:#0054b4;">Medium teal blue[&nbsp;#0054b4&nbsp;]</span>
+					<span color="#48d1cc" title="Medium turquoise:#[48d1cc]" style="background:#48d1cc;">Medium turquoise[&nbsp;#48d1cc&nbsp;]</span>
+					<span color="#c71585" title="Medium violet red:#[c71585]" style="background:#c71585;">Medium violet red[&nbsp;#c71585&nbsp;]</span>
+					<span color="#fdbcb4" title="Melon:#[fdbcb4]" style="background:#fdbcb4;">Melon[&nbsp;#fdbcb4&nbsp;]</span>
+					<span color="#191970" title="Midnight blue:#[191970]" style="background:#191970;">Midnight blue[&nbsp;#191970&nbsp;]</span>
+					<span color="#004953" title="Midnight green:#[004953]" style="background:#004953;">Midnight green[&nbsp;#004953&nbsp;]</span>
+					<span color="#ffc40c" title="Mikado yellow:#[ffc40c]" style="background:#ffc40c;">Mikado yellow[&nbsp;#ffc40c&nbsp;]</span>
+					<span color="#3eb489" title="Mint:#[3eb489]" style="background:#3eb489;">Mint[&nbsp;#3eb489&nbsp;]</span>
+					<span color="#f5fffa" title="Mint cream:#[f5fffa]" style="background:#f5fffa;">Mint cream[&nbsp;#f5fffa&nbsp;]</span>
+					<span color="#98ff98" title="Mint green:#[98ff98]" style="background:#98ff98;">Mint green[&nbsp;#98ff98&nbsp;]</span>
+					<span color="#ffe4e1" title="Misty rose:#[ffe4e1]" style="background:#ffe4e1;">Misty rose[&nbsp;#ffe4e1&nbsp;]</span>
+					<span color="#faebd7" title="Moccasin:#[faebd7]" style="background:#faebd7;">Moccasin[&nbsp;#faebd7&nbsp;]</span>
+					<span color="#967117" title="Mode beige:#[967117]" style="background:#967117;">Mode beige[&nbsp;#967117&nbsp;]</span>
+					<span color="#73a9c2" title="Moonstone blue:#[73a9c2]" style="background:#73a9c2;">Moonstone blue[&nbsp;#73a9c2&nbsp;]</span>
+					<span color="#ae0c00" title="Mordant red 19:#[ae0c00]" style="background:#ae0c00;">Mordant red 19[&nbsp;#ae0c00&nbsp;]</span>
+					<span color="#addfad" title="Moss green:#[addfad]" style="background:#addfad;">Moss green[&nbsp;#addfad&nbsp;]</span>
+					<span color="#30ba8f" title="Mountain Meadow:#[30ba8f]" style="background:#30ba8f;">Mountain Meadow[&nbsp;#30ba8f&nbsp;]</span>
+					<span color="#997a8d" title="Mountbatten pink:#[997a8d]" style="background:#997a8d;">Mountbatten pink[&nbsp;#997a8d&nbsp;]</span>
+					<span color="#c54b8c" title="Mulberry:#[c54b8c]" style="background:#c54b8c;">Mulberry[&nbsp;#c54b8c&nbsp;]</span>
+					<span color="#f2f3f4" title="Munsell:#[f2f3f4]" style="background:#f2f3f4;">Munsell[&nbsp;#f2f3f4&nbsp;]</span>
+					<span color="#ffdb58" title="Mustard:#[ffdb58]" style="background:#ffdb58;">Mustard[&nbsp;#ffdb58&nbsp;]</span>
+					<span color="#21421e" title="Myrtle:#[21421e]" style="background:#21421e;">Myrtle[&nbsp;#21421e&nbsp;]</span>
+					<span color="#f6adc6" title="Nadeshiko pink:#[f6adc6]" style="background:#f6adc6;">Nadeshiko pink[&nbsp;#f6adc6&nbsp;]</span>
+					<span color="#2a8000" title="Napier green:#[2a8000]" style="background:#2a8000;">Napier green[&nbsp;#2a8000&nbsp;]</span>
+					<span color="#fada5e" title="Naples yellow:#[fada5e]" style="background:#fada5e;">Naples yellow[&nbsp;#fada5e&nbsp;]</span>
+					<span color="#ffdead" title="Navajo white:#[ffdead]" style="background:#ffdead;">Navajo white[&nbsp;#ffdead&nbsp;]</span>
+					<span color="#000080" title="Navy blue:#[000080]" style="background:#000080;">Navy blue[&nbsp;#000080&nbsp;]</span>
+					<span color="#ffa343" title="Neon Carrot:#[ffa343]" style="background:#ffa343;">Neon Carrot[&nbsp;#ffa343&nbsp;]</span>
+					<span color="#fe59c2" title="Neon fuchsia:#[fe59c2]" style="background:#fe59c2;">Neon fuchsia[&nbsp;#fe59c2&nbsp;]</span>
+					<span color="#39ff14" title="Neon green:#[39ff14]" style="background:#39ff14;">Neon green[&nbsp;#39ff14&nbsp;]</span>
+					<span color="#a4dded" title="Non-photo blue:#[a4dded]" style="background:#a4dded;">Non-photo blue[&nbsp;#a4dded&nbsp;]</span>
+					<span color="#059033" title="North Texas Green:#[059033]" style="background:#059033;">North Texas Green[&nbsp;#059033&nbsp;]</span>
+					<span color="#0077be" title="Ocean Boat Blue:#[0077be]" style="background:#0077be;">Ocean Boat Blue[&nbsp;#0077be&nbsp;]</span>
+					<span color="#cc7722" title="Ochre:#[cc7722]" style="background:#cc7722;">Ochre[&nbsp;#cc7722&nbsp;]</span>
+					<span color="#008000" title="Office green:#[008000]" style="background:#008000;">Office green[&nbsp;#008000&nbsp;]</span>
+					<span color="#cfb53b" title="Old gold:#[cfb53b]" style="background:#cfb53b;">Old gold[&nbsp;#cfb53b&nbsp;]</span>
+					<span color="#fdf5e6" title="Old lace:#[fdf5e6]" style="background:#fdf5e6;">Old lace[&nbsp;#fdf5e6&nbsp;]</span>
+					<span color="#796878" title="Old lavender:#[796878]" style="background:#796878;">Old lavender[&nbsp;#796878&nbsp;]</span>
+					<span color="#673147" title="Old mauve:#[673147]" style="background:#673147;">Old mauve[&nbsp;#673147&nbsp;]</span>
+					<span color="#c08081" title="Old rose:#[c08081]" style="background:#c08081;">Old rose[&nbsp;#c08081&nbsp;]</span>
+					<span color="#808000" title="Olive:#[808000]" style="background:#808000;">Olive[&nbsp;#808000&nbsp;]</span>
+					<span color="#6b8e23" title="Olive Drab:#[6b8e23]" style="background:#6b8e23;">Olive Drab[&nbsp;#6b8e23&nbsp;]</span>
+					<span color="#bab86c" title="Olive Green:#[bab86c]" style="background:#bab86c;">Olive Green[&nbsp;#bab86c&nbsp;]</span>
+					<span color="#9ab973" title="Olivine:#[9ab973]" style="background:#9ab973;">Olivine[&nbsp;#9ab973&nbsp;]</span>
+					<span color="#0f0f0f" title="Onyx:#[0f0f0f]" style="background:#0f0f0f;">Onyx[&nbsp;#0f0f0f&nbsp;]</span>
+					<span color="#b784a7" title="Opera mauve:#[b784a7]" style="background:#b784a7;">Opera mauve[&nbsp;#b784a7&nbsp;]</span>
+					<span color="#ffa500" title="Orange:#[ffa500]" style="background:#ffa500;">Orange[&nbsp;#ffa500&nbsp;]</span>
+					<span color="#f8d568" title="Orange Yellow:#[f8d568]" style="background:#f8d568;">Orange Yellow[&nbsp;#f8d568&nbsp;]</span>
+					<span color="#ff9f00" title="Orange peel:#[ff9f00]" style="background:#ff9f00;">Orange peel[&nbsp;#ff9f00&nbsp;]</span>
+					<span color="#ff4500" title="Orange red:#[ff4500]" style="background:#ff4500;">Orange red[&nbsp;#ff4500&nbsp;]</span>
+					<span color="#da70d6" title="Orchid:#[da70d6]" style="background:#da70d6;">Orchid[&nbsp;#da70d6&nbsp;]</span>
+					<span color="#654321" title="Otter brown:#[654321]" style="background:#654321;">Otter brown[&nbsp;#654321&nbsp;]</span>
+					<span color="#414a4c" title="Outer Space:#[414a4c]" style="background:#414a4c;">Outer Space[&nbsp;#414a4c&nbsp;]</span>
+					<span color="#ff6e4a" title="Outrageous Orange:#[ff6e4a]" style="background:#ff6e4a;">Outrageous Orange[&nbsp;#ff6e4a&nbsp;]</span>
+					<span color="#002147" title="Oxford Blue:#[002147]" style="background:#002147;">Oxford Blue[&nbsp;#002147&nbsp;]</span>
+					<span color="#1ca9c9" title="Pacific Blue:#[1ca9c9]" style="background:#1ca9c9;">Pacific Blue[&nbsp;#1ca9c9&nbsp;]</span>
+					<span color="#006600" title="Pakistan green:#[006600]" style="background:#006600;">Pakistan green[&nbsp;#006600&nbsp;]</span>
+					<span color="#273be2" title="Palatinate blue:#[273be2]" style="background:#273be2;">Palatinate blue[&nbsp;#273be2&nbsp;]</span>
+					<span color="#682860" title="Palatinate purple:#[682860]" style="background:#682860;">Palatinate purple[&nbsp;#682860&nbsp;]</span>
+					<span color="#bcd4e6" title="Pale aqua:#[bcd4e6]" style="background:#bcd4e6;">Pale aqua[&nbsp;#bcd4e6&nbsp;]</span>
+					<span color="#afeeee" title="Pale blue:#[afeeee]" style="background:#afeeee;">Pale blue[&nbsp;#afeeee&nbsp;]</span>
+					<span color="#987654" title="Pale brown:#[987654]" style="background:#987654;">Pale brown[&nbsp;#987654&nbsp;]</span>
+					<span color="#af4035" title="Pale carmine:#[af4035]" style="background:#af4035;">Pale carmine[&nbsp;#af4035&nbsp;]</span>
+					<span color="#9bc4e2" title="Pale cerulean:#[9bc4e2]" style="background:#9bc4e2;">Pale cerulean[&nbsp;#9bc4e2&nbsp;]</span>
+					<span color="#ddadaf" title="Pale chestnut:#[ddadaf]" style="background:#ddadaf;">Pale chestnut[&nbsp;#ddadaf&nbsp;]</span>
+					<span color="#da8a67" title="Pale copper:#[da8a67]" style="background:#da8a67;">Pale copper[&nbsp;#da8a67&nbsp;]</span>
+					<span color="#abcdef" title="Pale cornflower blue:#[abcdef]" style="background:#abcdef;">Pale cornflower blue[&nbsp;#abcdef&nbsp;]</span>
+					<span color="#e6be8a" title="Pale gold:#[e6be8a]" style="background:#e6be8a;">Pale gold[&nbsp;#e6be8a&nbsp;]</span>
+					<span color="#eee8aa" title="Pale goldenrod:#[eee8aa]" style="background:#eee8aa;">Pale goldenrod[&nbsp;#eee8aa&nbsp;]</span>
+					<span color="#98fb98" title="Pale green:#[98fb98]" style="background:#98fb98;">Pale green[&nbsp;#98fb98&nbsp;]</span>
+					<span color="#dcd0ff" title="Pale lavender:#[dcd0ff]" style="background:#dcd0ff;">Pale lavender[&nbsp;#dcd0ff&nbsp;]</span>
+					<span color="#f984e5" title="Pale magenta:#[f984e5]" style="background:#f984e5;">Pale magenta[&nbsp;#f984e5&nbsp;]</span>
+					<span color="#fadadd" title="Pale pink:#[fadadd]" style="background:#fadadd;">Pale pink[&nbsp;#fadadd&nbsp;]</span>
+					<span color="#dda0dd" title="Pale plum:#[dda0dd]" style="background:#dda0dd;">Pale plum[&nbsp;#dda0dd&nbsp;]</span>
+					<span color="#db7093" title="Pale red violet:#[db7093]" style="background:#db7093;">Pale red violet[&nbsp;#db7093&nbsp;]</span>
+					<span color="#96ded1" title="Pale robin egg blue:#[96ded1]" style="background:#96ded1;">Pale robin egg blue[&nbsp;#96ded1&nbsp;]</span>
+					<span color="#c9c0bb" title="Pale silver:#[c9c0bb]" style="background:#c9c0bb;">Pale silver[&nbsp;#c9c0bb&nbsp;]</span>
+					<span color="#ecebbd" title="Pale spring bud:#[ecebbd]" style="background:#ecebbd;">Pale spring bud[&nbsp;#ecebbd&nbsp;]</span>
+					<span color="#bc987e" title="Pale taupe:#[bc987e]" style="background:#bc987e;">Pale taupe[&nbsp;#bc987e&nbsp;]</span>
+					<span color="#db7093" title="Pale violet red:#[db7093]" style="background:#db7093;">Pale violet red[&nbsp;#db7093&nbsp;]</span>
+					<span color="#78184a" title="Pansy purple:#[78184a]" style="background:#78184a;">Pansy purple[&nbsp;#78184a&nbsp;]</span>
+					<span color="#ffefd5" title="Papaya whip:#[ffefd5]" style="background:#ffefd5;">Papaya whip[&nbsp;#ffefd5&nbsp;]</span>
+					<span color="#50c878" title="Paris Green:#[50c878]" style="background:#50c878;">Paris Green[&nbsp;#50c878&nbsp;]</span>
+					<span color="#aec6cf" title="Pastel blue:#[aec6cf]" style="background:#aec6cf;">Pastel blue[&nbsp;#aec6cf&nbsp;]</span>
+					<span color="#836953" title="Pastel brown:#[836953]" style="background:#836953;">Pastel brown[&nbsp;#836953&nbsp;]</span>
+					<span color="#cfcfc4" title="Pastel gray:#[cfcfc4]" style="background:#cfcfc4;">Pastel gray[&nbsp;#cfcfc4&nbsp;]</span>
+					<span color="#77dd77" title="Pastel green:#[77dd77]" style="background:#77dd77;">Pastel green[&nbsp;#77dd77&nbsp;]</span>
+					<span color="#f49ac2" title="Pastel magenta:#[f49ac2]" style="background:#f49ac2;">Pastel magenta[&nbsp;#f49ac2&nbsp;]</span>
+					<span color="#ffb347" title="Pastel orange:#[ffb347]" style="background:#ffb347;">Pastel orange[&nbsp;#ffb347&nbsp;]</span>
+					<span color="#ffd1dc" title="Pastel pink:#[ffd1dc]" style="background:#ffd1dc;">Pastel pink[&nbsp;#ffd1dc&nbsp;]</span>
+					<span color="#b39eb5" title="Pastel purple:#[b39eb5]" style="background:#b39eb5;">Pastel purple[&nbsp;#b39eb5&nbsp;]</span>
+					<span color="#ff6961" title="Pastel red:#[ff6961]" style="background:#ff6961;">Pastel red[&nbsp;#ff6961&nbsp;]</span>
+					<span color="#cb99c9" title="Pastel violet:#[cb99c9]" style="background:#cb99c9;">Pastel violet[&nbsp;#cb99c9&nbsp;]</span>
+					<span color="#fdfd96" title="Pastel yellow:#[fdfd96]" style="background:#fdfd96;">Pastel yellow[&nbsp;#fdfd96&nbsp;]</span>
+					<span color="#800080" title="Patriarch:#[800080]" style="background:#800080;">Patriarch[&nbsp;#800080&nbsp;]</span>
+					<span color="#536878" title="Payne grey:#[536878]" style="background:#536878;">Payne grey[&nbsp;#536878&nbsp;]</span>
+					<span color="#ffe5b4" title="Peach:#[ffe5b4]" style="background:#ffe5b4;">Peach[&nbsp;#ffe5b4&nbsp;]</span>
+					<span color="#ffdab9" title="Peach puff:#[ffdab9]" style="background:#ffdab9;">Peach puff[&nbsp;#ffdab9&nbsp;]</span>
+					<span color="#fadfad" title="Peach yellow:#[fadfad]" style="background:#fadfad;">Peach yellow[&nbsp;#fadfad&nbsp;]</span>
+					<span color="#d1e231" title="Pear:#[d1e231]" style="background:#d1e231;">Pear[&nbsp;#d1e231&nbsp;]</span>
+					<span color="#eae0c8" title="Pearl:#[eae0c8]" style="background:#eae0c8;">Pearl[&nbsp;#eae0c8&nbsp;]</span>
+					<span color="#88d8c0" title="Pearl Aqua:#[88d8c0]" style="background:#88d8c0;">Pearl Aqua[&nbsp;#88d8c0&nbsp;]</span>
+					<span color="#e6e200" title="Peridot:#[e6e200]" style="background:#e6e200;">Peridot[&nbsp;#e6e200&nbsp;]</span>
+					<span color="#ccccff" title="Periwinkle:#[ccccff]" style="background:#ccccff;">Periwinkle[&nbsp;#ccccff&nbsp;]</span>
+					<span color="#1c39bb" title="Persian blue:#[1c39bb]" style="background:#1c39bb;">Persian blue[&nbsp;#1c39bb&nbsp;]</span>
+					<span color="#32127a" title="Persian indigo:#[32127a]" style="background:#32127a;">Persian indigo[&nbsp;#32127a&nbsp;]</span>
+					<span color="#d99058" title="Persian orange:#[d99058]" style="background:#d99058;">Persian orange[&nbsp;#d99058&nbsp;]</span>
+					<span color="#f77fbe" title="Persian pink:#[f77fbe]" style="background:#f77fbe;">Persian pink[&nbsp;#f77fbe&nbsp;]</span>
+					<span color="#701c1c" title="Persian plum:#[701c1c]" style="background:#701c1c;">Persian plum[&nbsp;#701c1c&nbsp;]</span>
+					<span color="#cc3333" title="Persian red:#[cc3333]" style="background:#cc3333;">Persian red[&nbsp;#cc3333&nbsp;]</span>
+					<span color="#fe28a2" title="Persian rose:#[fe28a2]" style="background:#fe28a2;">Persian rose[&nbsp;#fe28a2&nbsp;]</span>
+					<span color="#df00ff" title="Phlox:#[df00ff]" style="background:#df00ff;">Phlox[&nbsp;#df00ff&nbsp;]</span>
+					<span color="#000f89" title="Phthalo blue:#[000f89]" style="background:#000f89;">Phthalo blue[&nbsp;#000f89&nbsp;]</span>
+					<span color="#123524" title="Phthalo green:#[123524]" style="background:#123524;">Phthalo green[&nbsp;#123524&nbsp;]</span>
+					<span color="#fddde6" title="Piggy pink:#[fddde6]" style="background:#fddde6;">Piggy pink[&nbsp;#fddde6&nbsp;]</span>
+					<span color="#01796f" title="Pine green:#[01796f]" style="background:#01796f;">Pine green[&nbsp;#01796f&nbsp;]</span>
+					<span color="#ffc0cb" title="Pink:#[ffc0cb]" style="background:#ffc0cb;">Pink[&nbsp;#ffc0cb&nbsp;]</span>
+					<span color="#fc74fd" title="Pink Flamingo:#[fc74fd]" style="background:#fc74fd;">Pink Flamingo[&nbsp;#fc74fd&nbsp;]</span>
+					<span color="#f78fa7" title="Pink Sherbet:#[f78fa7]" style="background:#f78fa7;">Pink Sherbet[&nbsp;#f78fa7&nbsp;]</span>
+					<span color="#e7accf" title="Pink pearl:#[e7accf]" style="background:#e7accf;">Pink pearl[&nbsp;#e7accf&nbsp;]</span>
+					<span color="#93c572" title="Pistachio:#[93c572]" style="background:#93c572;">Pistachio[&nbsp;#93c572&nbsp;]</span>
+					<span color="#e5e4e2" title="Platinum:#[e5e4e2]" style="background:#e5e4e2;">Platinum[&nbsp;#e5e4e2&nbsp;]</span>
+					<span color="#dda0dd" title="Plum:#[dda0dd]" style="background:#dda0dd;">Plum[&nbsp;#dda0dd&nbsp;]</span>
+					<span color="#ff5a36" title="Portland Orange:#[ff5a36]" style="background:#ff5a36;">Portland Orange[&nbsp;#ff5a36&nbsp;]</span>
+					<span color="#b0e0e6" title="Powder blue:#[b0e0e6]" style="background:#b0e0e6;">Powder blue[&nbsp;#b0e0e6&nbsp;]</span>
+					<span color="#ff8f00" title="Princeton orange:#[ff8f00]" style="background:#ff8f00;">Princeton orange[&nbsp;#ff8f00&nbsp;]</span>
+					<span color="#003153" title="Prussian blue:#[003153]" style="background:#003153;">Prussian blue[&nbsp;#003153&nbsp;]</span>
+					<span color="#df00ff" title="Psychedelic purple:#[df00ff]" style="background:#df00ff;">Psychedelic purple[&nbsp;#df00ff&nbsp;]</span>
+					<span color="#cc8899" title="Puce:#[cc8899]" style="background:#cc8899;">Puce[&nbsp;#cc8899&nbsp;]</span>
+					<span color="#ff7518" title="Pumpkin:#[ff7518]" style="background:#ff7518;">Pumpkin[&nbsp;#ff7518&nbsp;]</span>
+					<span color="#800080" title="Purple:#[800080]" style="background:#800080;">Purple[&nbsp;#800080&nbsp;]</span>
+					<span color="#69359c" title="Purple Heart:#[69359c]" style="background:#69359c;">Purple Heart[&nbsp;#69359c&nbsp;]</span>
+					<span color="#9d81ba" title="Purple Mountain's Majesty:#[9d81ba]" style="background:#9d81ba;">Purple Mountain's Majesty[&nbsp;#9d81ba&nbsp;]</span>
+					<span color="#9678b6" title="Purple mountain majesty:#[9678b6]" style="background:#9678b6;">Purple mountain majesty[&nbsp;#9678b6&nbsp;]</span>
+					<span color="#fe4eda" title="Purple pizzazz:#[fe4eda]" style="background:#fe4eda;">Purple pizzazz[&nbsp;#fe4eda&nbsp;]</span>
+					<span color="#50404d" title="Purple taupe:#[50404d]" style="background:#50404d;">Purple taupe[&nbsp;#50404d&nbsp;]</span>
+					<span color="#5d8aa8" title="Rackley:#[5d8aa8]" style="background:#5d8aa8;">Rackley[&nbsp;#5d8aa8&nbsp;]</span>
+					<span color="#ff355e" title="Radical Red:#[ff355e]" style="background:#ff355e;">Radical Red[&nbsp;#ff355e&nbsp;]</span>
+					<span color="#e30b5d" title="Raspberry:#[e30b5d]" style="background:#e30b5d;">Raspberry[&nbsp;#e30b5d&nbsp;]</span>
+					<span color="#915f6d" title="Raspberry glace:#[915f6d]" style="background:#915f6d;">Raspberry glace[&nbsp;#915f6d&nbsp;]</span>
+					<span color="#e25098" title="Raspberry pink:#[e25098]" style="background:#e25098;">Raspberry pink[&nbsp;#e25098&nbsp;]</span>
+					<span color="#b3446c" title="Raspberry rose:#[b3446c]" style="background:#b3446c;">Raspberry rose[&nbsp;#b3446c&nbsp;]</span>
+					<span color="#d68a59" title="Raw Sienna:#[d68a59]" style="background:#d68a59;">Raw Sienna[&nbsp;#d68a59&nbsp;]</span>
+					<span color="#ff33cc" title="Razzle dazzle rose:#[ff33cc]" style="background:#ff33cc;">Razzle dazzle rose[&nbsp;#ff33cc&nbsp;]</span>
+					<span color="#e3256b" title="Razzmatazz:#[e3256b]" style="background:#e3256b;">Razzmatazz[&nbsp;#e3256b&nbsp;]</span>
+					<span color="#ff0000" title="Red:#[ff0000]" style="background:#ff0000;">Red[&nbsp;#ff0000&nbsp;]</span>
+					<span color="#ff5349" title="Red Orange:#[ff5349]" style="background:#ff5349;">Red Orange[&nbsp;#ff5349&nbsp;]</span>
+					<span color="#a52a2a" title="Red brown:#[a52a2a]" style="background:#a52a2a;">Red brown[&nbsp;#a52a2a&nbsp;]</span>
+					<span color="#c71585" title="Red violet:#[c71585]" style="background:#c71585;">Red violet[&nbsp;#c71585&nbsp;]</span>
+					<span color="#004040" title="Rich black:#[004040]" style="background:#004040;">Rich black[&nbsp;#004040&nbsp;]</span>
+					<span color="#d70040" title="Rich carmine:#[d70040]" style="background:#d70040;">Rich carmine[&nbsp;#d70040&nbsp;]</span>
+					<span color="#0892d0" title="Rich electric blue:#[0892d0]" style="background:#0892d0;">Rich electric blue[&nbsp;#0892d0&nbsp;]</span>
+					<span color="#b666d2" title="Rich lilac:#[b666d2]" style="background:#b666d2;">Rich lilac[&nbsp;#b666d2&nbsp;]</span>
+					<span color="#b03060" title="Rich maroon:#[b03060]" style="background:#b03060;">Rich maroon[&nbsp;#b03060&nbsp;]</span>
+					<span color="#414833" title="Rifle green:#[414833]" style="background:#414833;">Rifle green[&nbsp;#414833&nbsp;]</span>
+					<span color="#1fcecb" title="Robin's Egg Blue:#[1fcecb]" style="background:#1fcecb;">Robin's Egg Blue[&nbsp;#1fcecb&nbsp;]</span>
+					<span color="#ff007f" title="Rose:#[ff007f]" style="background:#ff007f;">Rose[&nbsp;#ff007f&nbsp;]</span>
+					<span color="#f9429e" title="Rose bonbon:#[f9429e]" style="background:#f9429e;">Rose bonbon[&nbsp;#f9429e&nbsp;]</span>
+					<span color="#674846" title="Rose ebony:#[674846]" style="background:#674846;">Rose ebony[&nbsp;#674846&nbsp;]</span>
+					<span color="#b76e79" title="Rose gold:#[b76e79]" style="background:#b76e79;">Rose gold[&nbsp;#b76e79&nbsp;]</span>
+					<span color="#e32636" title="Rose madder:#[e32636]" style="background:#e32636;">Rose madder[&nbsp;#e32636&nbsp;]</span>
+					<span color="#ff66cc" title="Rose pink:#[ff66cc]" style="background:#ff66cc;">Rose pink[&nbsp;#ff66cc&nbsp;]</span>
+					<span color="#aa98a9" title="Rose quartz:#[aa98a9]" style="background:#aa98a9;">Rose quartz[&nbsp;#aa98a9&nbsp;]</span>
+					<span color="#905d5d" title="Rose taupe:#[905d5d]" style="background:#905d5d;">Rose taupe[&nbsp;#905d5d&nbsp;]</span>
+					<span color="#ab4e52" title="Rose vale:#[ab4e52]" style="background:#ab4e52;">Rose vale[&nbsp;#ab4e52&nbsp;]</span>
+					<span color="#65000b" title="Rosewood:#[65000b]" style="background:#65000b;">Rosewood[&nbsp;#65000b&nbsp;]</span>
+					<span color="#d40000" title="Rosso corsa:#[d40000]" style="background:#d40000;">Rosso corsa[&nbsp;#d40000&nbsp;]</span>
+					<span color="#bc8f8f" title="Rosy brown:#[bc8f8f]" style="background:#bc8f8f;">Rosy brown[&nbsp;#bc8f8f&nbsp;]</span>
+					<span color="#0038a8" title="Royal azure:#[0038a8]" style="background:#0038a8;">Royal azure[&nbsp;#0038a8&nbsp;]</span>
+					<span color="#4169e1" title="Royal blue:#[4169e1]" style="background:#4169e1;">Royal blue[&nbsp;#4169e1&nbsp;]</span>
+					<span color="#ca2c92" title="Royal fuchsia:#[ca2c92]" style="background:#ca2c92;">Royal fuchsia[&nbsp;#ca2c92&nbsp;]</span>
+					<span color="#7851a9" title="Royal purple:#[7851a9]" style="background:#7851a9;">Royal purple[&nbsp;#7851a9&nbsp;]</span>
+					<span color="#e0115f" title="Ruby:#[e0115f]" style="background:#e0115f;">Ruby[&nbsp;#e0115f&nbsp;]</span>
+					<span color="#ff0028" title="Ruddy:#[ff0028]" style="background:#ff0028;">Ruddy[&nbsp;#ff0028&nbsp;]</span>
+					<span color="#bb6528" title="Ruddy brown:#[bb6528]" style="background:#bb6528;">Ruddy brown[&nbsp;#bb6528&nbsp;]</span>
+					<span color="#e18e96" title="Ruddy pink:#[e18e96]" style="background:#e18e96;">Ruddy pink[&nbsp;#e18e96&nbsp;]</span>
+					<span color="#a81c07" title="Rufous:#[a81c07]" style="background:#a81c07;">Rufous[&nbsp;#a81c07&nbsp;]</span>
+					<span color="#80461b" title="Russet:#[80461b]" style="background:#80461b;">Russet[&nbsp;#80461b&nbsp;]</span>
+					<span color="#b7410e" title="Rust:#[b7410e]" style="background:#b7410e;">Rust[&nbsp;#b7410e&nbsp;]</span>
+					<span color="#00563f" title="Sacramento State green:#[00563f]" style="background:#00563f;">Sacramento State green[&nbsp;#00563f&nbsp;]</span>
+					<span color="#8b4513" title="Saddle brown:#[8b4513]" style="background:#8b4513;">Saddle brown[&nbsp;#8b4513&nbsp;]</span>
+					<span color="#ff6700" title="Safety orange:#[ff6700]" style="background:#ff6700;">Safety orange[&nbsp;#ff6700&nbsp;]</span>
+					<span color="#f4c430" title="Saffron:#[f4c430]" style="background:#f4c430;">Saffron[&nbsp;#f4c430&nbsp;]</span>
+					<span color="#23297a" title="Saint Patrick Blue:#[23297a]" style="background:#23297a;">Saint Patrick Blue[&nbsp;#23297a&nbsp;]</span>
+					<span color="#ff8c69" title="Salmon:#[ff8c69]" style="background:#ff8c69;">Salmon[&nbsp;#ff8c69&nbsp;]</span>
+					<span color="#ff91a4" title="Salmon pink:#[ff91a4]" style="background:#ff91a4;">Salmon pink[&nbsp;#ff91a4&nbsp;]</span>
+					<span color="#c2b280" title="Sand:#[c2b280]" style="background:#c2b280;">Sand[&nbsp;#c2b280&nbsp;]</span>
+					<span color="#967117" title="Sand dune:#[967117]" style="background:#967117;">Sand dune[&nbsp;#967117&nbsp;]</span>
+					<span color="#ecd540" title="Sandstorm:#[ecd540]" style="background:#ecd540;">Sandstorm[&nbsp;#ecd540&nbsp;]</span>
+					<span color="#f4a460" title="Sandy brown:#[f4a460]" style="background:#f4a460;">Sandy brown[&nbsp;#f4a460&nbsp;]</span>
+					<span color="#967117" title="Sandy taupe:#[967117]" style="background:#967117;">Sandy taupe[&nbsp;#967117&nbsp;]</span>
+					<span color="#507d2a" title="Sap green:#[507d2a]" style="background:#507d2a;">Sap green[&nbsp;#507d2a&nbsp;]</span>
+					<span color="#0f52ba" title="Sapphire:#[0f52ba]" style="background:#0f52ba;">Sapphire[&nbsp;#0f52ba&nbsp;]</span>
+					<span color="#cba135" title="Satin sheen gold:#[cba135]" style="background:#cba135;">Satin sheen gold[&nbsp;#cba135&nbsp;]</span>
+					<span color="#ff2400" title="Scarlet:#[ff2400]" style="background:#ff2400;">Scarlet[&nbsp;#ff2400&nbsp;]</span>
+					<span color="#ffd800" title="School bus yellow:#[ffd800]" style="background:#ffd800;">School bus yellow[&nbsp;#ffd800&nbsp;]</span>
+					<span color="#76ff7a" title="Screamin Green:#[76ff7a]" style="background:#76ff7a;">Screamin Green[&nbsp;#76ff7a&nbsp;]</span>
+					<span color="#006994" title="Sea blue:#[006994]" style="background:#006994;">Sea blue[&nbsp;#006994&nbsp;]</span>
+					<span color="#2e8b57" title="Sea green:#[2e8b57]" style="background:#2e8b57;">Sea green[&nbsp;#2e8b57&nbsp;]</span>
+					<span color="#321414" title="Seal brown:#[321414]" style="background:#321414;">Seal brown[&nbsp;#321414&nbsp;]</span>
+					<span color="#fff5ee" title="Seashell:#[fff5ee]" style="background:#fff5ee;">Seashell[&nbsp;#fff5ee&nbsp;]</span>
+					<span color="#ffba00" title="Selective yellow:#[ffba00]" style="background:#ffba00;">Selective yellow[&nbsp;#ffba00&nbsp;]</span>
+					<span color="#704214" title="Sepia:#[704214]" style="background:#704214;">Sepia[&nbsp;#704214&nbsp;]</span>
+					<span color="#8a795d" title="Shadow:#[8a795d]" style="background:#8a795d;">Shadow[&nbsp;#8a795d&nbsp;]</span>
+					<span color="#45cea2" title="Shamrock:#[45cea2]" style="background:#45cea2;">Shamrock[&nbsp;#45cea2&nbsp;]</span>
+					<span color="#009e60" title="Shamrock green:#[009e60]" style="background:#009e60;">Shamrock green[&nbsp;#009e60&nbsp;]</span>
+					<span color="#fc0fc0" title="Shocking pink:#[fc0fc0]" style="background:#fc0fc0;">Shocking pink[&nbsp;#fc0fc0&nbsp;]</span>
+					<span color="#882d17" title="Sienna:#[882d17]" style="background:#882d17;">Sienna[&nbsp;#882d17&nbsp;]</span>
+					<span color="#c0c0c0" title="Silver:#[c0c0c0]" style="background:#c0c0c0;">Silver[&nbsp;#c0c0c0&nbsp;]</span>
+					<span color="#cb410b" title="Sinopia:#[cb410b]" style="background:#cb410b;">Sinopia[&nbsp;#cb410b&nbsp;]</span>
+					<span color="#007474" title="Skobeloff:#[007474]" style="background:#007474;">Skobeloff[&nbsp;#007474&nbsp;]</span>
+					<span color="#87ceeb" title="Sky blue:#[87ceeb]" style="background:#87ceeb;">Sky blue[&nbsp;#87ceeb&nbsp;]</span>
+					<span color="#cf71af" title="Sky magenta:#[cf71af]" style="background:#cf71af;">Sky magenta[&nbsp;#cf71af&nbsp;]</span>
+					<span color="#6a5acd" title="Slate blue:#[6a5acd]" style="background:#6a5acd;">Slate blue[&nbsp;#6a5acd&nbsp;]</span>
+					<span color="#708090" title="Slate gray:#[708090]" style="background:#708090;">Slate gray[&nbsp;#708090&nbsp;]</span>
+					<span color="#003399" title="Smalt:#[003399]" style="background:#003399;">Smalt[&nbsp;#003399&nbsp;]</span>
+					<span color="#933d41" title="Smokey topaz:#[933d41]" style="background:#933d41;">Smokey topaz[&nbsp;#933d41&nbsp;]</span>
+					<span color="#100c08" title="Smoky black:#[100c08]" style="background:#100c08;">Smoky black[&nbsp;#100c08&nbsp;]</span>
+					<span color="#fffafa" title="Snow:#[fffafa]" style="background:#fffafa;">Snow[&nbsp;#fffafa&nbsp;]</span>
+					<span color="#0fc0fc" title="Spiro Disco Ball:#[0fc0fc]" style="background:#0fc0fc;">Spiro Disco Ball[&nbsp;#0fc0fc&nbsp;]</span>
+					<span color="#a7fc00" title="Spring bud:#[a7fc00]" style="background:#a7fc00;">Spring bud[&nbsp;#a7fc00&nbsp;]</span>
+					<span color="#00ff7f" title="Spring green:#[00ff7f]" style="background:#00ff7f;">Spring green[&nbsp;#00ff7f&nbsp;]</span>
+					<span color="#4682b4" title="Steel blue:#[4682b4]" style="background:#4682b4;">Steel blue[&nbsp;#4682b4&nbsp;]</span>
+					<span color="#fada5e" title="Stil de grain yellow:#[fada5e]" style="background:#fada5e;">Stil de grain yellow[&nbsp;#fada5e&nbsp;]</span>
+					<span color="#990000" title="Stizza:#[990000]" style="background:#990000;">Stizza[&nbsp;#990000&nbsp;]</span>
+					<span color="#008080" title="Stormcloud:#[008080]" style="background:#008080;">Stormcloud[&nbsp;#008080&nbsp;]</span>
+					<span color="#e4d96f" title="Straw:#[e4d96f]" style="background:#e4d96f;">Straw[&nbsp;#e4d96f&nbsp;]</span>
+					<span color="#ffcc33" title="Sunglow:#[ffcc33]" style="background:#ffcc33;">Sunglow[&nbsp;#ffcc33&nbsp;]</span>
+					<span color="#fad6a5" title="Sunset:#[fad6a5]" style="background:#fad6a5;">Sunset[&nbsp;#fad6a5&nbsp;]</span>
+					<span color="#fd5e53" title="Sunset Orange:#[fd5e53]" style="background:#fd5e53;">Sunset Orange[&nbsp;#fd5e53&nbsp;]</span>
+					<span color="#d2b48c" title="Tan:#[d2b48c]" style="background:#d2b48c;">Tan[&nbsp;#d2b48c&nbsp;]</span>
+					<span color="#f94d00" title="Tangelo:#[f94d00]" style="background:#f94d00;">Tangelo[&nbsp;#f94d00&nbsp;]</span>
+					<span color="#f28500" title="Tangerine:#[f28500]" style="background:#f28500;">Tangerine[&nbsp;#f28500&nbsp;]</span>
+					<span color="#ffcc00" title="Tangerine yellow:#[ffcc00]" style="background:#ffcc00;">Tangerine yellow[&nbsp;#ffcc00&nbsp;]</span>
+					<span color="#483c32" title="Taupe:#[483c32]" style="background:#483c32;">Taupe[&nbsp;#483c32&nbsp;]</span>
+					<span color="#8b8589" title="Taupe gray:#[8b8589]" style="background:#8b8589;">Taupe gray[&nbsp;#8b8589&nbsp;]</span>
+					<span color="#cd5700" title="Tawny:#[cd5700]" style="background:#cd5700;">Tawny[&nbsp;#cd5700&nbsp;]</span>
+					<span color="#d0f0c0" title="Tea green:#[d0f0c0]" style="background:#d0f0c0;">Tea green[&nbsp;#d0f0c0&nbsp;]</span>
+					<span color="#f4c2c2" title="Tea rose:#[f4c2c2]" style="background:#f4c2c2;">Tea rose[&nbsp;#f4c2c2&nbsp;]</span>
+					<span color="#008080" title="Teal:#[008080]" style="background:#008080;">Teal[&nbsp;#008080&nbsp;]</span>
+					<span color="#367588" title="Teal blue:#[367588]" style="background:#367588;">Teal blue[&nbsp;#367588&nbsp;]</span>
+					<span color="#006d5b" title="Teal green:#[006d5b]" style="background:#006d5b;">Teal green[&nbsp;#006d5b&nbsp;]</span>
+					<span color="#e2725b" title="Terra cotta:#[e2725b]" style="background:#e2725b;">Terra cotta[&nbsp;#e2725b&nbsp;]</span>
+					<span color="#d8bfd8" title="Thistle:#[d8bfd8]" style="background:#d8bfd8;">Thistle[&nbsp;#d8bfd8&nbsp;]</span>
+					<span color="#de6fa1" title="Thulian pink:#[de6fa1]" style="background:#de6fa1;">Thulian pink[&nbsp;#de6fa1&nbsp;]</span>
+					<span color="#fc89ac" title="Tickle Me Pink:#[fc89ac]" style="background:#fc89ac;">Tickle Me Pink[&nbsp;#fc89ac&nbsp;]</span>
+					<span color="#0abab5" title="Tiffany Blue:#[0abab5]" style="background:#0abab5;">Tiffany Blue[&nbsp;#0abab5&nbsp;]</span>
+					<span color="#e08d3c" title="Tiger eye:#[e08d3c]" style="background:#e08d3c;">Tiger eye[&nbsp;#e08d3c&nbsp;]</span>
+					<span color="#dbd7d2" title="Timberwolf:#[dbd7d2]" style="background:#dbd7d2;">Timberwolf[&nbsp;#dbd7d2&nbsp;]</span>
+					<span color="#eee600" title="Titanium yellow:#[eee600]" style="background:#eee600;">Titanium yellow[&nbsp;#eee600&nbsp;]</span>
+					<span color="#ff6347" title="Tomato:#[ff6347]" style="background:#ff6347;">Tomato[&nbsp;#ff6347&nbsp;]</span>
+					<span color="#746cc0" title="Toolbox:#[746cc0]" style="background:#746cc0;">Toolbox[&nbsp;#746cc0&nbsp;]</span>
+					<span color="#ffc87c" title="Topaz:#[ffc87c]" style="background:#ffc87c;">Topaz[&nbsp;#ffc87c&nbsp;]</span>
+					<span color="#fd0e35" title="Tractor red:#[fd0e35]" style="background:#fd0e35;">Tractor red[&nbsp;#fd0e35&nbsp;]</span>
+					<span color="#808080" title="Trolley Grey:#[808080]" style="background:#808080;">Trolley Grey[&nbsp;#808080&nbsp;]</span>
+					<span color="#00755e" title="Tropical rain forest:#[00755e]" style="background:#00755e;">Tropical rain forest[&nbsp;#00755e&nbsp;]</span>
+					<span color="#0073cf" title="True Blue:#[0073cf]" style="background:#0073cf;">True Blue[&nbsp;#0073cf&nbsp;]</span>
+					<span color="#417dc1" title="Tufts Blue:#[417dc1]" style="background:#417dc1;">Tufts Blue[&nbsp;#417dc1&nbsp;]</span>
+					<span color="#deaa88" title="Tumbleweed:#[deaa88]" style="background:#deaa88;">Tumbleweed[&nbsp;#deaa88&nbsp;]</span>
+					<span color="#b57281" title="Turkish rose:#[b57281]" style="background:#b57281;">Turkish rose[&nbsp;#b57281&nbsp;]</span>
+					<span color="#30d5c8" title="Turquoise:#[30d5c8]" style="background:#30d5c8;">Turquoise[&nbsp;#30d5c8&nbsp;]</span>
+					<span color="#00ffef" title="Turquoise blue:#[00ffef]" style="background:#00ffef;">Turquoise blue[&nbsp;#00ffef&nbsp;]</span>
+					<span color="#a0d6b4" title="Turquoise green:#[a0d6b4]" style="background:#a0d6b4;">Turquoise green[&nbsp;#a0d6b4&nbsp;]</span>
+					<span color="#66424d" title="Tuscan red:#[66424d]" style="background:#66424d;">Tuscan red[&nbsp;#66424d&nbsp;]</span>
+					<span color="#8a496b" title="Twilight lavender:#[8a496b]" style="background:#8a496b;">Twilight lavender[&nbsp;#8a496b&nbsp;]</span>
+					<span color="#66023c" title="Tyrian purple:#[66023c]" style="background:#66023c;">Tyrian purple[&nbsp;#66023c&nbsp;]</span>
+					<span color="#0033aa" title="UA blue:#[0033aa]" style="background:#0033aa;">UA blue[&nbsp;#0033aa&nbsp;]</span>
+					<span color="#d9004c" title="UA red:#[d9004c]" style="background:#d9004c;">UA red[&nbsp;#d9004c&nbsp;]</span>
+					<span color="#536895" title="UCLA Blue:#[536895]" style="background:#536895;">UCLA Blue[&nbsp;#536895&nbsp;]</span>
+					<span color="#ffb300" title="UCLA Gold:#[ffb300]" style="background:#ffb300;">UCLA Gold[&nbsp;#ffb300&nbsp;]</span>
+					<span color="#3cd070" title="UFO Green:#[3cd070]" style="background:#3cd070;">UFO Green[&nbsp;#3cd070&nbsp;]</span>
+					<span color="#014421" title="UP Forest green:#[014421]" style="background:#014421;">UP Forest green[&nbsp;#014421&nbsp;]</span>
+					<span color="#7b1113" title="UP Maroon:#[7b1113]" style="background:#7b1113;">UP Maroon[&nbsp;#7b1113&nbsp;]</span>
+					<span color="#990000" title="USC Cardinal:#[990000]" style="background:#990000;">USC Cardinal[&nbsp;#990000&nbsp;]</span>
+					<span color="#ffcc00" title="USC Gold:#[ffcc00]" style="background:#ffcc00;">USC Gold[&nbsp;#ffcc00&nbsp;]</span>
+					<span color="#8878c3" title="Ube:#[8878c3]" style="background:#8878c3;">Ube[&nbsp;#8878c3&nbsp;]</span>
+					<span color="#ff6fff" title="Ultra pink:#[ff6fff]" style="background:#ff6fff;">Ultra pink[&nbsp;#ff6fff&nbsp;]</span>
+					<span color="#120a8f" title="Ultramarine:#[120a8f]" style="background:#120a8f;">Ultramarine[&nbsp;#120a8f&nbsp;]</span>
+					<span color="#4166f5" title="Ultramarine blue:#[4166f5]" style="background:#4166f5;">Ultramarine blue[&nbsp;#4166f5&nbsp;]</span>
+					<span color="#635147" title="Umber:#[635147]" style="background:#635147;">Umber[&nbsp;#635147&nbsp;]</span>
+					<span color="#5b92e5" title="United Nations blue:#[5b92e5]" style="background:#5b92e5;">United Nations blue[&nbsp;#5b92e5&nbsp;]</span>
+					<span color="#b78727" title="University of California Gold:#[b78727]" style="background:#b78727;">University of California Gold[&nbsp;#b78727&nbsp;]</span>
+					<span color="#ffff66" title="Unmellow Yellow:#[ffff66]" style="background:#ffff66;">Unmellow Yellow[&nbsp;#ffff66&nbsp;]</span>
+					<span color="#ae2029" title="Upsdell red:#[ae2029]" style="background:#ae2029;">Upsdell red[&nbsp;#ae2029&nbsp;]</span>
+					<span color="#e1ad21" title="Urobilin:#[e1ad21]" style="background:#e1ad21;">Urobilin[&nbsp;#e1ad21&nbsp;]</span>
+					<span color="#d3003f" title="Utah Crimson:#[d3003f]" style="background:#d3003f;">Utah Crimson[&nbsp;#d3003f&nbsp;]</span>
+					<span color="#f3e5ab" title="Vanilla:#[f3e5ab]" style="background:#f3e5ab;">Vanilla[&nbsp;#f3e5ab&nbsp;]</span>
+					<span color="#c5b358" title="Vegas gold:#[c5b358]" style="background:#c5b358;">Vegas gold[&nbsp;#c5b358&nbsp;]</span>
+					<span color="#c80815" title="Venetian red:#[c80815]" style="background:#c80815;">Venetian red[&nbsp;#c80815&nbsp;]</span>
+					<span color="#43b3ae" title="Verdigris:#[43b3ae]" style="background:#43b3ae;">Verdigris[&nbsp;#43b3ae&nbsp;]</span>
+					<span color="#e34234" title="Vermilion:#[e34234]" style="background:#e34234;">Vermilion[&nbsp;#e34234&nbsp;]</span>
+					<span color="#a020f0" title="Veronica:#[a020f0]" style="background:#a020f0;">Veronica[&nbsp;#a020f0&nbsp;]</span>
+					<span color="#ee82ee" title="Violet:#[ee82ee]" style="background:#ee82ee;">Violet[&nbsp;#ee82ee&nbsp;]</span>
+					<span color="#324ab2" title="Violet Blue:#[324ab2]" style="background:#324ab2;">Violet Blue[&nbsp;#324ab2&nbsp;]</span>
+					<span color="#f75394" title="Violet Red:#[f75394]" style="background:#f75394;">Violet Red[&nbsp;#f75394&nbsp;]</span>
+					<span color="#40826d" title="Viridian:#[40826d]" style="background:#40826d;">Viridian[&nbsp;#40826d&nbsp;]</span>
+					<span color="#922724" title="Vivid auburn:#[922724]" style="background:#922724;">Vivid auburn[&nbsp;#922724&nbsp;]</span>
+					<span color="#9f1d35" title="Vivid burgundy:#[9f1d35]" style="background:#9f1d35;">Vivid burgundy[&nbsp;#9f1d35&nbsp;]</span>
+					<span color="#da1d81" title="Vivid cerise:#[da1d81]" style="background:#da1d81;">Vivid cerise[&nbsp;#da1d81&nbsp;]</span>
+					<span color="#ffa089" title="Vivid tangerine:#[ffa089]" style="background:#ffa089;">Vivid tangerine[&nbsp;#ffa089&nbsp;]</span>
+					<span color="#9f00ff" title="Vivid violet:#[9f00ff]" style="background:#9f00ff;">Vivid violet[&nbsp;#9f00ff&nbsp;]</span>
+					<span color="#004242" title="Warm black:#[004242]" style="background:#004242;">Warm black[&nbsp;#004242&nbsp;]</span>
+					<span color="#00ffff" title="Waterspout:#[00ffff]" style="background:#00ffff;">Waterspout[&nbsp;#00ffff&nbsp;]</span>
+					<span color="#645452" title="Wenge:#[645452]" style="background:#645452;">Wenge[&nbsp;#645452&nbsp;]</span>
+					<span color="#f5deb3" title="Wheat:#[f5deb3]" style="background:#f5deb3;">Wheat[&nbsp;#f5deb3&nbsp;]</span>
+					<span color="#ffffff" title="White:#[ffffff]" style="background:#ffffff;">White[&nbsp;#ffffff&nbsp;]</span>
+					<span color="#f5f5f5" title="White smoke:#[f5f5f5]" style="background:#f5f5f5;">White smoke[&nbsp;#f5f5f5&nbsp;]</span>
+					<span color="#ff43a4" title="Wild Strawberry:#[ff43a4]" style="background:#ff43a4;">Wild Strawberry[&nbsp;#ff43a4&nbsp;]</span>
+					<span color="#fc6c85" title="Wild Watermelon:#[fc6c85]" style="background:#fc6c85;">Wild Watermelon[&nbsp;#fc6c85&nbsp;]</span>
+					<span color="#a2add0" title="Wild blue yonder:#[a2add0]" style="background:#a2add0;">Wild blue yonder[&nbsp;#a2add0&nbsp;]</span>
+					<span color="#722f37" title="Wine:#[722f37]" style="background:#722f37;">Wine[&nbsp;#722f37&nbsp;]</span>
+					<span color="#c9a0dc" title="Wisteria:#[c9a0dc]" style="background:#c9a0dc;">Wisteria[&nbsp;#c9a0dc&nbsp;]</span>
+					<span color="#738678" title="Xanadu:#[738678]" style="background:#738678;">Xanadu[&nbsp;#738678&nbsp;]</span>
+					<span color="#0f4d92" title="Yale Blue:#[0f4d92]" style="background:#0f4d92;">Yale Blue[&nbsp;#0f4d92&nbsp;]</span>
+					<span color="#ffff00" title="Yellow:#[ffff00]" style="background:#ffff00;">Yellow[&nbsp;#ffff00&nbsp;]</span>
+					<span color="#ffae42" title="Yellow Orange:#[ffae42]" style="background:#ffae42;">Yellow Orange[&nbsp;#ffae42&nbsp;]</span>
+					<span color="#9acd32" title="Yellow green:#[9acd32]" style="background:#9acd32;">Yellow green[&nbsp;#9acd32&nbsp;]</span>
+					<span color="#0014a8" title="Zaffre:#[0014a8]" style="background:#0014a8;">Zaffre[&nbsp;#0014a8&nbsp;]</span>
+					<span color="#2c1608" title="Zinnwaldite brown:#[2c1608]" style="background:#2c1608;">Zinnwaldite brown[&nbsp;#2c1608&nbsp;]</span>
                 </div>
               </div>
                 <div class="section section-dashboard">
                     <h3>Solution Export - 色彩方案输出</h2>
-                    <div class="figure">
-                      <div class="figcaption">互补色<br/>Complementary</div>
-                      <ul class="complementary scheme two">
-                        <li class="color one"></li>
-                        <li class="color two"></li>
-                      </ul>
-                      <div class="figlegend">
-                        <span class="one" style="">#aabbcc</span>
-                        <span class="two" style="">#aabbcc</span>
-                      </div>
-                    </div>
                     
                     <div class="figure">
-                      <div class="figcaption">相邻色<br/>[Analogous]</div>
+                      <div class="figcaption">邻色<br/>[Analogous]</div>
                       <ul class="analgous scheme five">
                         <li class="color one"></li>
                         <li class="color two"></li>
@@ -229,9 +825,20 @@
                         <span class="five" style="">#aabbcc</span>
                       </div>
                     </div>
+                    <div class="figure">
+                      <div class="figcaption">补色<br/>Complementary</div>
+                      <ul class="complementary scheme two">
+                        <li class="color one"></li>
+                        <li class="color two"></li>
+                      </ul>
+                      <div class="figlegend">
+                        <span class="one" style="">#aabbcc</span>
+                        <span class="two" style="">#aabbcc</span>
+                      </div>
+                    </div>
 
                     <div class="figure">
-                      <div class="figcaption">分解互补色<br/>Split Complementary</div>
+                      <div class="figcaption">分解补色<br/>Split Complementary</div>
                       <ul class="split-comp scheme three">
                         <li class="color one"></li>
                         <li class="color two"></li>
@@ -241,6 +848,88 @@
                         <span class="one" style="">#aabbcc</span>
                         <span class="two" style="">#aabbcc</span>
                         <span class="three" style="">#aabbcc</span>
+                      </div>
+                    </div>
+                    
+                    <div class="figure">
+                      <div class="figcaption">三角分割色<br/>Triadic</div>
+                      <ul class="triadic scheme three">
+                        <li class="color one"></li>
+                        <li class="color two"></li>
+                        <li class="color three"></li>
+                      </ul>
+                      <div class="figlegend">
+                        <span class="one" style="">#aabbcc</span>
+                        <span class="two" style="">#aabbcc</span>
+                        <span class="three" style="">#aabbcc</span>
+                      </div>
+                    </div>
+                    
+                    <div class="figure">
+                      <div class="figcaption">矩形分割色<br/>Tetradic</div>
+                      <ul class="tetradic scheme four">
+                        <li class="color one"></li>
+                        <li class="color two"></li>
+                        <li class="color three"></li>
+                        <li class="color four"></li>
+                      </ul>
+                      <div class="figlegend">
+                        <span class="one" style="">#aabbcc</span>
+                        <span class="two" style="">#aabbcc</span>
+                        <span class="three" style="">#aabbcc</span>
+                        <span class="four" style="">#aabbcc</span>
+                      </div>
+                    </div>
+                    
+                    <div class="figure">
+                      <div class="figcaption">正方分割色<br/>Tetradic</div>
+                      <ul class="square scheme four">
+                        <li class="color one"></li>
+                        <li class="color two"></li>
+                        <li class="color three"></li>
+                        <li class="color four"></li>
+                      </ul>
+                      <div class="figlegend">
+                        <span class="one" style="">#aabbcc</span>
+                        <span class="two" style="">#aabbcc</span>
+                        <span class="three" style="">#aabbcc</span>
+                        <span class="four" style="">#aabbcc</span>
+                      </div>
+                    </div>
+                    
+                    <div class="figure">
+                      <div class="figcaption">单色<br/>Monochromatic</div>
+                      <ul class="tints scheme five">
+                        <li class="color one"></li>
+                        <li class="color two"></li>
+                        <li class="color three"></li>
+                        <li class="color four"></li>
+                        <li class="color five"></li>
+                      </ul>
+                      <div class="figlegend">
+                        <span class="one" style="">#aabbcc</span>
+                        <span class="two" style="">#aabbcc</span>
+                        <span class="three" style="">#aabbcc</span>
+                        <span class="four" style="">#aabbcc</span>
+                        <span class="five" style="">#aabbcc</span>
+                      </div>
+                    </div>
+                    
+                    <div class="figure">
+                      <div class="figcaption">明色<br/>Tints</div>
+                      <ul class="tints scheme five">
+                        <li class="color one"></li>
+                        <li class="color two"></li>
+                        <li class="color three"></li>
+                        <li class="color four"></li>
+                        <li class="color five"></li>
+                      </ul>
+                      <div class="figlegend">
+                        <span class="one" style="">#aabbcc</span>
+                        <span class="two" style="">#aabbcc</span>
+                        <span class="three" style="">#aabbcc</span>
+                        <span class="four" style="">#aabbcc</span>
+                        <span class="five" style="">#aabbcc</span>
                       </div>
                     </div>
                     
@@ -273,36 +962,6 @@
                         <span class="one" style="">#aabbcc</span>
                         <span class="two" style="">#aabbcc</span>
                         <span class="three" style="">#aabbcc</span>
-                      </div>
-                    </div>
-                    
-                    <div class="figure">
-                      <div class="figcaption">对比色<br/>Triadic</div>
-                      <ul class="triadic scheme three">
-                        <li class="color one"></li>
-                        <li class="color two"></li>
-                        <li class="color three"></li>
-                      </ul>
-                      <div class="figlegend">
-                        <span class="one" style="">#aabbcc</span>
-                        <span class="two" style="">#aabbcc</span>
-                        <span class="three" style="">#aabbcc</span>
-                      </div>
-                    </div>
-                    
-                    <div class="figure">
-                      <div class="figcaption">矩形分割色<br/>Tetradic</div>
-                      <ul class="tetradic scheme four">
-                        <li class="color one"></li>
-                        <li class="color two"></li>
-                        <li class="color three"></li>
-                        <li class="color four"></li>
-                      </ul>
-                      <div class="figlegend">
-                        <span class="one" style="">#aabbcc</span>
-                        <span class="two" style="">#aabbcc</span>
-                        <span class="three" style="">#aabbcc</span>
-                        <span class="four" style="">#aabbcc</span>
                       </div>
                     </div>
                     
