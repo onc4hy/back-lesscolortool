@@ -30,16 +30,16 @@ lesscolortool
 > 所以如果要直接在本地访问，除了Firefox外，其他浏览器都有Ajax访问本地限制而不能使用。
 > 可以直接放到Web服务器下来访问使用即可。
 
-### 功能快速截图
+### Screen[功能快速截图]
 
-![功能快速截图] (http://)
+> ![功能快速截图] (http://onc4hy.qiniudn.com/home.png)
 
 ### Thanks[延展感谢]：
 
-[kuler](https://kuler.adobe.com/) <https://kuler.adobe.com/>
+> [Kuler](https://kuler.adobe.com/) <https://kuler.adobe.com/>
 
-[LESS](http://lesscss.org) <http://lesscss.org>
+> [Less](http://lesscss.org) <http://lesscss.org>
 
-[JKING90Demo](http://jimmyking.me/colors.less/) <http://jimmyking.me/colors.less/>
+> [JKING90Demo](http://jimmyking.me/colors.less/) <http://jimmyking.me/colors.less/>
 
-[MyDemo] <http://>
+> [MyDemo] <http://>
