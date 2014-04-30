@@ -34,7 +34,7 @@ lesscolortool
 
 ### Screen[功能快速截图]
 
-> ![功能快速截图] (http://onc4hy.qiniudn.com/home.png)
+> ![功能快速截图] (http://screen.qiniudn.com/lesscolortool_home.png)
 
 ### Thanks[延展感谢]：
 
