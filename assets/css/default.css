@@ -58,6 +58,12 @@ body {
 	padding-bottom:2px;
 	margin-bottom:2px;
 }
+.article .aside .color-control {
+	position:relative;
+	float:left;
+	width:240px;
+	height:300px;
+}
 .article .aside .color-ref{
 	clear:both;
 	margin-right:2px;
@@ -78,15 +84,9 @@ body {
 	clear:both;
 }
 
-.color-control {
-	position:relative;
-	float:left;
-	width:240px;
-	height:300px;
-}
 #color-btn {
 	position:absolute;
-	right:40px;
+	right:14px;
 	top:10px;
 	border:#ff9900;
 	background:#ff9900;
@@ -95,6 +95,9 @@ body {
 	padding:6px 20px;
 }
 #color-value {
+	width:220px;
+	outline:none;
+	border:1px dashed #999;
 	margin-top:40px;
 }
 #color-picker {
