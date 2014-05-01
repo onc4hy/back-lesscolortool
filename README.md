@@ -38,11 +38,11 @@ lesscolortool
 
 ### Thanks[延展感谢]：
 
-> [Kuler](https://kuler.adobe.com/) <https://kuler.adobe.com/>
+> [Kuler] <https://kuler.adobe.com/>
 
-> [Less](http://lesscss.org) <http://lesscss.org>
+> [Less] <http://lesscss.org>
 
-> [JKING90Demo](http://jimmyking.me/colors.less/) <http://jimmyking.me/colors.less/>
+> [Jking90Demo] <http://jimmyking.me/colors.less/>
 
 > [Colorhexa] <http://www.colorhexa.com/color-names>
 
