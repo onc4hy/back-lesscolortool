@@ -45,6 +45,7 @@ body {
 .article {
 	padding-left:240px;
 	position:relative;
+	min-height:1750px;
 }
 .article .aside{
 	position:absolute;
@@ -83,6 +84,12 @@ body {
 }
 .article .section{
 	clear:both;
+}
+.footer {
+	background:#e5e5e5;
+	height:50px;
+	line-height:50px;
+	text-align:center;
 }
 
 #color-btn {
